@@ -334,12 +334,6 @@ $arComponentParameters = array(
 			"DEFAULT" => array(1),
 			"MULTIPLE" => "Y",
 		),
-		"STRICT_SECTION_CHECK" => array(
-			"PARENT" => "ADDITIONAL_SETTINGS",
-			"NAME" => GetMessage("CP_BN_STRICT_SECTION_CHECK"),
-			"TYPE" => "CHECKBOX",
-			"DEFAULT" => isset($arCurrentValues["DETAIL_STRICT_SECTION_CHECK"]) ? $arCurrentValues["DETAIL_STRICT_SECTION_CHECK"] : "N",
-		),
 		"CACHE_TIME" => array("DEFAULT" => 36000000),
 		"CACHE_FILTER" => array(
 			"PARENT" => "CACHE_SETTINGS",
