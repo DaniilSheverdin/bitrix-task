@@ -1,0 +1,61 @@
+.official {
+  padding: 3rem 0 1.125rem;
+
+  background: $violet;
+
+  &__header {
+    margin: 0 0 2rem;
+
+    color: #fff;
+
+    @include h1;
+  }
+
+  &__search-form {
+    width: 100%;
+    max-width: 45.625rem;
+    margin-bottom: 2rem;
+
+    .search-form__input {
+      @include search-input;
+
+      background: rgba(255, 255, 255, 0.8);
+
+      &::placeholder {
+        color: $blue
+      }
+
+      &:-ms-input-placeholder {
+        color: $blue
+      }
+
+      &::-ms-input-placeholder {
+        color: $blue
+      }
+    }
+
+    .search-form__button {
+      @include search-button;
+
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &__indicators-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__indicator {
+    margin: 0 1.5rem 1.25rem 0;
+    padding: 0.625rem 0.75rem;
+
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3.75rem;
+
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+  }
+}

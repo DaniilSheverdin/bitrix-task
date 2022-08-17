@@ -1,0 +1,823 @@
+#to_cadrs {
+    display: block;
+    max-width: 22rem;
+    margin: 0 auto;
+}
+
+/*.Mon, .Tue, .Wed, .Thu, .Fri, .Sat, .Sun*/
+.table-vacation .Tue, .table-vacation .Wed, .table-vacation .Thu, .table-vacation .Fri, .table-vacation .Sat {
+    border: unset;
+}
+
+.table-vacation tr {
+    color: #535c68;
+}
+
+.table-vacation .Mon {
+    border-right: unset;
+}
+
+.table-vacation .Sun {
+    border-left: unset;
+}
+
+.select-week {
+    background: lightblue !important;
+}
+
+.table-vacation .cadrs_class {
+    background: #EFFFBF
+;
+    border: unset;
+}
+
+.table-vacation .n_class {
+    background: #FDFFB4;
+    border: unset;
+}
+
+.table-vacation .head_class {
+    background: #BCE3FF
+;
+    border: unset;
+}
+
+.table-vacation .approve {
+    background: #EFFFBF
+;
+    border: unset;
+}
+
+.table-vacation td {
+    padding: 4px;
+    font-size: 12px;
+}
+
+.table-vacation th {
+    white-space: nowrap;
+    padding: 0.2rem 1rem;
+}
+
+#holidays table {
+    border-collapse: collapse;
+}
+
+#holidays th {
+    border: 1px solid #CCd;
+    padding: 4px;
+}
+
+#holidays td {
+    border: 1px solid #CCd;
+}
+
+.plus-btn {
+    float: right;
+    font-size: 20px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: #2cb111;
+    cursor: pointer;
+}
+
+.plus-btn:hover {
+    background-color: #EAEAF7;
+}
+
+.link-approve {
+    color: #090;
+}
+
+.link-approve:hover {
+    color: #0c0;
+}
+
+.link-disapprove {
+}
+
+.link-disapprove:hover {
+}
+
+.link-remove {
+    color: #900;
+}
+
+.link-remove:hover {
+    color: #c00;
+}
+
+table#main-table td {
+    width: 20px;
+    height: 20px;
+    border-color: rgb(165, 197, 223);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.day-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.day-title-holiday {
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(245, 178, 178);
+}
+
+.day-title-holiday-past {
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(196, 179, 228);
+}
+
+.day-title-past {
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(231, 231, 243);
+}
+
+.day-past {
+    background-color: rgb(231, 231, 243);
+    position: relative;
+}
+
+.day-saved {
+    background-color: #FDFFB4;
+    color: #535c67;
+    position: relative;
+}
+
+.bg-ruk {
+    background-color: #BCE3FF
+;
+}
+
+.bg-ok {
+    background-color: #EFFFBF
+;
+}
+
+.table-vacation .bg-hol, .bg-hol {
+    background-color: #FFB4B4
+;
+}
+
+.bg-weekends {
+    background-color: #F3D0FF;
+}
+
+.bg-shortdays {
+    background-color: #FFEEB4;
+}
+
+.comment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2px;
+    white-space: nowrap;
+    z-index: 1000;
+    color: #666;
+}
+
+.active-day {
+    height: 100%;
+}
+
+.day-partial {
+    height: 40%;
+}
+
+.mark-head {
+    background-color: #BCE3FF
+;
+    color: white;
+}
+
+.mark-vacation {
+    background-color: #EFFFBF
+;
+    color: white;
+}
+
+.mark-assignment {
+    background-color: #e4a9da;
+}
+
+.mark-leavematerinity {
+    background-color: #b7d4f8;
+}
+
+.mark-leavesick {
+    background-color: #f2a584;
+}
+
+.mark-leaveunpayed {
+    background-color: #dd9c26;
+}
+
+.mark-unknown {
+    background-color: #fe3737;
+}
+
+.mark-other {
+    background-color: #ccc;
+}
+
+.mark-personal {
+    background-color: #a68729;
+}
+
+.table-vacation .current-user {
+    /*background-color:rgb(218, 252, 207);*/
+    background-color: #535c681a;
+}
+
+.any-user:hover {
+    background-color: rgb(240, 248, 248);
+}
+
+.planner-ok-button {
+    float: left;
+    padding: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.planner-esc-button {
+    float: left;
+    padding: 7px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.zero-pad {
+    padding: 0;
+}
+
+.error_res {
+    border: 2px solid red;
+    color: red;
+    padding: 10px;
+    margin: 10px 10px 0 0;
+    display: inline-block;
+    border-radius: 10px
+}
+
+.info_res {
+    border: 2px solid #28a745
+;
+    color: #28a745
+;
+    padding: 10px;
+    margin: 10px 10px 0 0;
+    display: inline-block;
+    border-radius: 10px
+}
+
+#date_edit_form {
+    display:none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 4px 4px 10px #666;
+}
+
+#date_edit_form table {
+    border-collapse: collapse;
+    background-color: #FFF
+}
+
+#date_edit_form table tr:last-child td {
+    font-weight: bold;
+    height: 20px;
+    text-align: center
+}
+
+#date_edit_title {
+    background-color: #e8e8e8;
+    text-align: center
+}
+
+#PREVIEW_TEXT {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.custom-select {
+    font-size: 0.8rem;
+    margin-bottom: 5px
+}
+
+.table_day {
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bcollapse {
+    border-collapse: collapse
+}
+
+.table-vacation tbody tr {
+    border-top: 1px solid #dee2e6;
+
+}
+
+.table-vacation tr {
+    height:45px;
+}
+
+#delegation {
+    margin-bottom: 5px;
+}
+
+.errorUser {
+    background:#dee2e6;
+}
+/* START TOOLTIP STYLES */
+[tooltip] {
+    position: relative; /* opinion 1 */
+}
+
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+    text-transform: none; /* opinion 2 */
+    font-size: .9em; /* opinion 3 */
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+[tooltip]::before {
+    content: '';
+    border: 5px solid transparent; /* opinion 4 */
+    z-index: 1001; /* absurdity 1 */
+}
+[tooltip]::after {
+    content: attr(tooltip); /* magic! */
+    /* most of the rest of this is opinion */
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+
+    /*
+      Let the content set the size of the tooltips
+      but this will also keep them from being obnoxious
+      */
+    min-width: 3em;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1ch 1.5ch;
+    border-radius: .3ch;
+    box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+    background: #333;
+    color: #fff;
+    z-index: 1000; /* absurdity 2 */
+}
+
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+    display: block;
+}
+
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+    display: none !important;
+}
+
+/* FLOW: UP */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+    bottom: 100%;
+    border-bottom-width: 0;
+    border-top-color: #333;
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+    bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+    left: 50%;
+    transform: translate(-50%, -.5em);
+}
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+    to {
+        opacity: .9;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes tooltips-horz {
+    to {
+        opacity: .9;
+        transform: translate(0, -50%);
+    }
+}
+
+/* FX All The Things */
+[tooltip]:not([flow]):hover::before,
+[tooltip]:not([flow]):hover::after,
+[tooltip][flow^="up"]:hover::before,
+[tooltip][flow^="up"]:hover::after {
+    animation: tooltips-vert 300ms ease-out forwards;
+}
+
+/*.period_1 {*/
+/*    border-bottom: 2px solid #EFFFBF !important;*/
+/*}*/
+
+/*.period_2 {*/
+/*    border-bottom: 2px solid #BCE3FF !important;*/
+/*}*/
+
+#popupMenu {
+    display: none;
+    position: absolute;
+    top: 343px;
+    left: 775px;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    color: #343a40;
+}
+
+#popupMenu a {
+    display: block;
+    color: #343a40;
+}
+
+#popupMenu a:hover {
+    color: #bdad1b;
+}
+
+#closeMenu {
+    color: #343a40;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.modal-overlay {
+    background: rgba(33, 33, 61, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.modal-wrapper {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1001;
+}
+
+.modal {
+    background: #fff;
+    color: #666871;
+    text-align: center;
+    max-width: 600px;
+    height: 380px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    padding: 40px;
+    padding-top: 5px;
+    pointer-events: auto;
+    font-weight: bold;
+    visibility: hidden;
+    /*overflow: auto;*/
+}
+
+.modal #ui-tile-selector-mail_client_config_queue {
+    height: 150px;
+    overflow: auto;
+}
+
+.docsign-actions {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 40em) {
+    .modal { height: 350px; }
+}
+
+.modal h2 {
+    font-size: 2.25em;
+    margin: 0.5em 0 0.25em;
+    color: #BDBFCA;
+}
+
+.close-modal {
+    color: #aaa;
+    background: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #666871;
+}
+
+.js-blur {
+    display: block;
+    position: fixed;
+}
+
+.clearfix {
+    clear:both;
+}
+
+.docsign-cryptoplugin select {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.input-find {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ced4da;
+    padding: 6px 12px;
+}
+
+.input-find+label {
+    margin: 0;
+    display: block;
+}
+
+.input-find+label::before {
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M21.7312 20.436L15.475 14.1798C16.6868 12.683 17.4165 10.7809 17.4165 8.70924C17.4165 3.90779 13.5097 0.000976562 8.70822 0.000976562C3.90677 0.000976562 0 3.90774 0 8.7092C0 13.5106 3.90681 17.4175 8.70826 17.4175C10.7799 17.4175 12.682 16.6878 14.1789 15.476L20.4351 21.7322C20.6138 21.9109 20.8484 22.0008 21.0831 22.0008C21.3178 22.0008 21.5525 21.9109 21.7312 21.7322C22.0896 21.3738 22.0896 20.7944 21.7312 20.436ZM8.70826 15.5841C4.91695 15.5841 1.83333 12.5005 1.83333 8.7092C1.83333 4.91789 4.91695 1.83426 8.70826 1.83426C12.4996 1.83426 15.5832 4.91789 15.5832 8.7092C15.5832 12.5005 12.4995 15.5841 8.70826 15.5841Z' fill='%238B8787'/%3e%3c/svg%3e ");
+    border: unset;
+    position: absolute;
+    right: 31px;
+    top: 10px;
+}
+
+#popup-iframe2, iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.i_days {
+    position: relative;
+    left: -20px;
+    font-weight: bold;
+    font-size: 12px;
+    top: 8px;
+}
+
+.table-vacation {
+    width: 100%;
+}
+.table-vacation th:first-child {
+    position: absolute;
+    left: 0;
+    padding-top: 10px;
+}
+
+.table-vacation thead tr:nth-child(1) th:nth-child(1),
+.table-vacation thead tr:nth-child(2) th:nth-child(1) {
+    margin-top: -1px;
+    height: 39px;
+}
+
+.table-vacation thead tr {
+    height: 37px;
+}
+
+#calendar {
+    position: relative
+}
+
+#calendar .inner {
+    overflow-x: scroll;
+    overflow-y: visible;
+    margin-left: 475px;
+}
+
+.table-vacation tr th:first-child {
+    width: 475px;
+    height: 46px;
+}
+
+.table-vacation tr th:first-child .fiouser {
+    color: #000000;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030
+}
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.bootstrap-select>.dropdown-toggle {
+    border-radius: unset;
+    background: white;
+    font-size: 14px;
+}
+
+.dropdown-toggle::after {
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M21.7312 20.436L15.475 14.1798C16.6868 12.683 17.4165 10.7809 17.4165 8.70924C17.4165 3.90779 13.5097 0.000976562 8.70822 0.000976562C3.90677 0.000976562 0 3.90774 0 8.7092C0 13.5106 3.90681 17.4175 8.70826 17.4175C10.7799 17.4175 12.682 16.6878 14.1789 15.476L20.4351 21.7322C20.6138 21.9109 20.8484 22.0008 21.0831 22.0008C21.3178 22.0008 21.5525 21.9109 21.7312 21.7322C22.0896 21.3738 22.0896 20.7944 21.7312 20.436ZM8.70826 15.5841C4.91695 15.5841 1.83333 12.5005 1.83333 8.7092C1.83333 4.91789 4.91695 1.83426 8.70826 1.83426C12.4996 1.83426 15.5832 4.91789 15.5832 8.7092C15.5832 12.5005 12.4995 15.5841 8.70826 15.5841Z' fill='%238B8787'/%3e%3c/svg%3e ");
+    border: unset;
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+
+.vacation-wrapper, .vacation-head {
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="checkbox"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: unset;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14px;
+    position: relative;
+    top: 4px;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='11' viewBox='0 0 13 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.06707 9.95065C4.9502 10.0682 4.79082 10.1338 4.6252 10.1338C4.45957 10.1338 4.3002 10.0682 4.18332 9.95065L0.65457 6.42128C0.28832 6.05503 0.28832 5.46128 0.65457 5.09565L1.09645 4.65378C1.4627 4.28753 2.05582 4.28753 2.42207 4.65378L4.6252 6.8569L10.5783 0.903777C10.9446 0.537527 11.5383 0.537527 11.9039 0.903777L12.3458 1.34565C12.7121 1.7119 12.7121 2.30565 12.3458 2.67128L5.06707 9.95065Z' fill='%230094FF'/%3e%3c/svg%3e ");
+}
+
+.vacation-wrapper a, .vacation-head a, .color-blue {
+    color: #0094FF;
+    font-weight: normal;
+}
+
+.vacation-wrapper {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    padding: 50px 33px;
+}
+
+.arrow-down::after {
+    content: '↓';
+    font-size: 14px;
+    position: relative;
+    top: -2px;
+}
+
+.arrow-up::after {
+    content: '↑';
+    font-size: 14px;
+    position: relative;
+    top: -2px;
+}
+
+.usual-grey {
+    font-weight: normal;
+    color: #8b8787;
+}
+
+.hideUser::after {
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.5131 2.48704C11.1966 -0.828811 5.8029 -0.828811 2.48634 2.48704C-0.828781 5.8029 -0.828781 11.1979 2.48634 14.5138C4.14462 16.1714 6.32234 16.9998 8.50009 16.9998C10.6778 16.9998 12.8548 16.1713 14.5131 14.5138C17.829 11.198 17.829 5.8029 14.5131 2.48704ZM12.0073 11.0059C12.2843 11.283 12.2843 11.7309 12.0073 12.0079C11.8691 12.1461 11.6877 12.2156 11.5062 12.2156C11.3248 12.2156 11.1434 12.1461 11.0052 12.0079L8.50006 9.5021L5.99563 12.0072C5.85675 12.1454 5.67531 12.2149 5.4946 12.2149C5.31319 12.2149 5.13175 12.1454 4.99356 12.0072C4.71648 11.7301 4.71648 11.2816 4.99356 11.0052L7.49798 8.50006L4.99286 5.99494C4.71578 5.71786 4.71578 5.26927 4.99286 4.9929C5.26924 4.71582 5.71783 4.71582 5.9949 4.9929L8.50002 7.49801L11.0051 4.9929C11.2822 4.71582 11.7301 4.71582 12.0072 4.9929C12.2843 5.26927 12.2843 5.71786 12.0072 5.99494L9.50207 8.50006L12.0073 11.0059Z' fill='%23FF6666'/%3e%3c/svg%3e ");;
+}
+
+.vacation-wrapper ::-webkit-scrollbar {
+    width: 10px; /* ширина для вертикального скролла */
+    height: 10px; /* высота для горизонтального скролла */
+}
+
+.vacation-wrapper ::-webkit-scrollbar-thumb {
+    background-color: #E1E1E1;
+    border-radius: 50px;
+}
+
+.vacation-wrapper ::-webkit-scrollbar-thumb:hover {
+    background-color: #dee2e6;
+}
+
+#employes thead tr {
+    height: 83px;
+    color: #8B8787;
+    font-weight: bold;
+}
+
+#employes tr td {
+    vertical-align: middle;
+}
+
+#employes tbody td a, #employes tbody td {
+    color: #000000;
+}
+
+.bg-user {
+    background: #F8F8F8;
+}
+
+#legend .item span:first-child {
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 12px;
+}
+
+#legend .item {
+    margin-bottom: 9px;
+}
+
+.actions .form-control {
+    border-radius: 0;
+}
+
+#sel_year span:first-child:after {
+    content: '/';
+}
+
+.tags .close {
+    float: unset;
+    color: #8B8787;
+    margin-left: 22px;
+    font-size: 1.1rem;
+}
+
+.tags {
+    display: flex;
+}
+
+.tags .item {
+    background: rgba(247, 247, 247, 0.8);
+    display: flex;
+    border-radius: 50px;
+    padding: 10px 12px;
+    align-items: center;
+    margin-right: 17px;
+    margin-top: 13px;
+}

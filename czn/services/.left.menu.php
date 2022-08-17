@@ -1,0 +1,126 @@
+<?
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/intranet/public/services/.left.menu.php");
+
+$aMenuLinks = Array(
+	Array(
+		GetMessage("SERVICES_MENU_MEETING_ROOM"),
+		"/czn/services/index.php",
+		Array("/czn/services/res_c.php"),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('MeetingRoomBookingSystem')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_IDEA"),
+		"/czn/services/idea/",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Idea')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_LISTS"),
+		"/czn/services/lists/",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Lists')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_REQUESTS"),
+		"/czn/services/requests/",
+		Array(),
+		Array(),
+		(!IsModuleInstalled("form"))?"false":"CBXFeatures::IsFeatureEnabled('Requests')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_LEARNING"),
+		"/czn/services/learning/",
+		Array("/services/course.php"),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Learning')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_WIKI"),
+		"/czn/services/wiki/",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Wiki')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_CONTACT_CENTER"),
+		"/czn/services/contact_center/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("SERVICES_MENU_FAQ"),
+		"/czn/services/faq/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("SERVICES_MENU_VOTE"),
+		"/czn/services/votes.php",
+		Array("/czn/services/vote_new.php", "/czn/services/vote_result.php"),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Vote')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_SUPPORT"),
+		"/czn/services/support.php?show_wizard=Y",
+		Array("/czn/services/support.php"),
+		Array(),
+		(!IsModuleInstalled("support"))?"false":"CBXFeatures::IsFeatureEnabled('Support')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_LINKS"),
+		"/czn/services/links.php",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('WebLink')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_SUBSCR"),
+		"/czn/services/subscr_edit.php",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Subscribe')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_EVENTLIST"),
+		"/czn/services/event_list.php",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('EventList')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_SALARY"),
+		"/czn/services/salary/",
+		Array(),
+		Array(),
+		"LANGUAGE_ID == 'ru' && CBXFeatures::IsFeatureEnabled('Salary')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_BOARD"),
+		"/czn/services/board/",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Board')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_TELEPHONY"),
+		"/czn/services/telephony/",
+		Array(),
+		Array(),
+		'CModule::IncludeModule("voximplant") && SITE_TEMPLATE_ID !== "bitrix24" && Bitrix\Voximplant\Security\Helper::isMainMenuEnabled()'
+	),
+	Array(
+		GetMessage("SERVICES_MENU_OPENLINES"),
+		"/czn/services/openlines/",
+		Array(),
+		Array(),
+		'CModule::IncludeModule("imopenlines") && SITE_TEMPLATE_ID !== "bitrix24" && Bitrix\ImOpenlines\Security\Helper::isMainMenuEnabled()'
+	),
+);
+?>

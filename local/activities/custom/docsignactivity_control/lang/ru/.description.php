@@ -1,0 +1,4 @@
+<?
+$MESS ['BPAR_DESCR_NAME'] = "ECP";
+$MESS ['BPAR_DESCR_DESCR'] = "ECP";
+?>

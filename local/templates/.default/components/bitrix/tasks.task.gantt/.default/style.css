@@ -1,0 +1,25 @@
+.task-iframe-popup-side-slider .tasks-gantt{
+    margin-left:30px;
+    margin-right:20px;
+}
+.switch-button {
+    transition: 160ms;
+    background-color: #3bc8f5;
+    color: white;
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 20px!important;
+    border-radius: 2px;
+}
+.switch-button:hover {
+    transition: 160ms;
+    background-color: #4ecef5;
+}
+.switch-button a {
+    color: white;
+    font: var(--ui-btn-font-size)/calc(var(--ui-btn-height) - 2px) "OpenSans-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+.switch-button a:hover {
+    color: white;
+}

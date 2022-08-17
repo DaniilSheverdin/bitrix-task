@@ -1,0 +1,52 @@
+.modal-body {
+    max-height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.jstree-default .jstree-disabled {
+    color: #000;
+}
+.jstree-default .jstree-disabled > .jstree-icon {
+    opacity: 1;
+    filter: none!important;
+    -webkit-filter: none!important;
+}
+.jstree-default .jstree-disabled > .jstree-checkbox {
+    display: none;
+}
+.user-list ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.table-sorting tr {
+    background: #fff;
+}
+.table-sorting td.sorter {
+    cursor: move;
+}
+.alert-white {
+    background-color: #fff;
+}
+.js-search-user {
+    width: 35%;
+    float: right;
+    margin: 0 0 0 auto;
+}
+.table-changelog .navigation {
+    padding: 0;
+    margin: 0;
+}
+.tab-content {
+    background-color: #fff;
+}
+.nav-tabs-custom > .nav-tabs > a {
+    border-top: 3px solid transparent;
+    border-color: transparent!important;
+    border-radius: 0!important;
+}
+.nav-tabs-custom > .nav-tabs > a.active {
+    border-top-color: #3c8dbc!important;
+    border-left-color: #f4f4f4!important;
+    border-right-color: #f4f4f4!important;
+}

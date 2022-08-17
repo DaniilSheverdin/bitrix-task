@@ -1,0 +1,93 @@
+.omni {
+  font-size: 1em;
+}
+.omni_table {
+  margin-bottom: 2rem;
+  width: 1109px;
+}
+.omni_table_head, .omni_table_body .row {
+  display: flex;
+}
+.omni_table_head div, .omni_table_body .row div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+}
+.omni_table_head div.percent_exec, .omni_table_head div.complete, .omni_table_head div.wrong, .omni_table_head div.create, .omni_table_body .row div.percent_exec, .omni_table_body .row div.complete, .omni_table_body .row div.wrong, .omni_table_body .row div.create {
+  width: 73px;
+}
+.omni_table_head div p, .omni_table_body .row div p {
+  margin: 0;
+}
+.omni_table_head div {
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  background-color: #36b5df;
+  color: white;
+  align-items: center;
+}
+.omni_table_head div:first-child {
+  border-left: 1px solid #36b5df;
+}
+.omni_table_head div:last-child {
+  border-right: 1px solid #36b5df;
+}
+.omni_table_body .row div {
+  border-left: 1px solid #36b5df;
+  border-bottom: 1px solid #36b5df;
+}
+.omni_table_body .row div.percent_exec, .omni_table_body .row div.complete, .omni_table_body .row div.wrong, .omni_table_body .row div.create {
+  text-align: right;
+}
+.omni_table_body .row div:last-child {
+  border-right: 1px solid #36b5df;
+}
+.omni_button {
+  background-color: #36b5df;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.omni_add-user {
+  display: none;
+}
+.omni #js-departments_select {
+  display: none;
+}
+.omni .input-group {
+  min-height: 37px;
+  margin-bottom: 1rem;
+}
+.omni .input-group label {
+  line-height: 37px;
+  width: 20%;
+  display: inline-block;
+}
+.omni .input-group input {
+  height: 37px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 18px;
+  width: 278px;
+  color: #444;
+}
+.omni .input-group button {
+  font-size: 18px;
+  border: none;
+}
+.omni .input-group #js-message {
+  font-size: 14px;
+}
+.omni .input-group #js-message .error {
+  color: darkred;
+}
+.omni .input-group #js-message .success {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

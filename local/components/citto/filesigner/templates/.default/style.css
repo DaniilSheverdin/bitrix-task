@@ -1,0 +1,471 @@
+<<<<<<< HEAD
+.page-header, #sidebar, #workarea-content {
+    opacity: 1!important;
+}
+
+.docsign-file__signed-self{
+    color: green;
+    display: none;
+}
+.docsign-file--signed .docsign-file__signed-self{
+    display: block;
+}
+.docsign-pp{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #F8F8F8;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    z-index: 999;
+}
+.docsign-pp__form{
+    align-self: center;
+    width: 420px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: auto;
+    border-radius: 4px;
+}
+.docsign-pp__form__title{
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 25px 0;
+}
+.docsign-pp__form__descr{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 25px 0;
+}
+.docsign-pp__form__controls button:hover{
+    background-color: #1180F7;
+}
+.docsign-pp__form__controls button{
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    background: #208CFF;
+    border-radius: 2px;
+    color:#fff;
+    border: 0;
+    z-index: 1;
+    cursor: pointer;
+    outline: none !important;
+}
+.docsign-pp__form__controls button.docsign-pp__form__btnw{
+    color: #208CFF;
+    background: #fff;
+    border: 1px solid #208CFF;
+}
+.docsign-pp__form__controls button.docsign-pp__form__btnw:hover{
+    background-color: #F2F2F2;
+}
+.docsign-pp__form__status{
+    text-align:center;
+    margin: 0 0 25px 0;
+}
+.docsign-pp__form__certs{
+    margin-bottom: 25px;
+}
+.docsign-cryptoplugin__certs__label{
+    color: #6E7478;
+    font-size: 13px;
+    padding: 13px 11px 3px;
+    display: block;
+    font-weight: normal;
+}
+.docsign-cryptoplugin__certs{
+    position: relative;
+    border: 1px solid #ccc;
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAe0lEQVQ4je3OQQ7BUBCH8Z/jdNGk0kRKbJCISCsSJ3MFJ3IKhEvYzFsQtFjybSbz3v+bGf4kdph1zE4jf8MYFzQt8jxyk0efI5yxeiIvcMLw1YYSR6zv3pchVy0Xgj4O2ERfhzzoIieKGLKNWrwjJzLskX8iJ3rfyL/CFYCbERekTrXgAAAAAElFTkSuQmCC');
+}
+.docsign-cryptoplugin__certs__selected{
+    padding: 0 11px 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+    padding-right: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+.docsign-cryptoplugin__certs__select{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.docsign-pp__info{
+    margin-left: 50px;
+    width: 340px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: 4px;
+    align-self: center;
+    border: 1px solid#D4D9DC;
+    background:transparent;
+}
+.docsign-pp__info a:link{
+    color: #208CFF;
+}
+.docsign-pp__info ul{
+    padding: 0;
+    margin: 0;
+    color: #FFAF74;
+}
+.docsign-pp__info ul li{
+    margin-bottom: 20px;
+}
+.docsign-pp__info ul li span{
+    color: #000;
+}
+.docsign-pp__info-title{
+    font-size:18px;
+    margin-bottom: 22px;
+}
+.docsign-pp__info-descr{
+    font-size:16px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.docsign-pp__close{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index:2;
+}
+
+.docsign-pp__close button{
+    line-height:20px;
+    height:20px;
+    border: 0;
+    background-color: transparent;
+    color: #444;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.docsign-pp__close button:hover{
+    color: #000;
+}
+
+.docsign-pp__close button span{
+    font-size: 20px;
+    line-height:20px;
+}
+
+.docsign-pp.st1,
+.docsign-pp.st2,
+.docsign-pp.st3,
+.docsign-pp.st4,
+.docsign-pp.err1,
+.docsign-pp.err2,
+.docsign-pp.err3,
+.docsign-pp.err4{
+    display: flex;
+}
+
+.docsign-pp__info,
+.docsign-pp__form__st1,
+.docsign-pp__form__st2,
+.docsign-pp__form__st3,
+.docsign-pp__form__st4,
+.docsign-pp__form__err1,
+.docsign-pp__form__err2,
+.docsign-pp__form__err3,
+.docsign-pp__form__err4,
+.docsign-pp__info__err1,
+.docsign-pp__info__err2,
+.docsign-pp__info__err3,
+.docsign-pp__info__err4,
+.docsign-pp__close{
+    display: none;
+}
+.docsign-pp.st1 .docsign-pp__form__st1,
+.docsign-pp.st1 .docsign-pp__close{
+    display: block;
+}
+.docsign-pp.st2 .docsign-pp__form__st2,
+.docsign-pp.st2 .docsign-pp__close{
+    display: block;
+}
+.docsign-pp.st3 .docsign-pp__form__st3{
+    display: block;
+}
+.docsign-pp.st4 .docsign-pp__form__st4,
+.docsign-pp.st4 .docsign-pp__close{
+    display: block;
+}
+.docsign-pp.err1 .docsign-pp__form__err1,
+.docsign-pp.err1 .docsign-pp__close,
+.docsign-pp.err1 .docsign-pp__info,
+.docsign-pp.err1 .docsign-pp__info .docsign-pp__info__err1{
+    display: block;
+}
+.docsign-pp.err2 .docsign-pp__form__err2,
+.docsign-pp.err2 .docsign-pp__close,
+.docsign-pp.err2 .docsign-pp__info,
+.docsign-pp.err2 .docsign-pp__info .docsign-pp__info__err2{
+    display: block;
+}
+.docsign-pp.err3 .docsign-pp__form__err3,
+.docsign-pp.err3 .docsign-pp__close,
+.docsign-pp.err3 .docsign-pp__info .docsign-pp__info__err3{
+    display: block;
+}
+.docsign-pp.err4 .docsign-pp__form__err4,
+.docsign-pp.err4 .docsign-pp__close,
+.docsign-pp.err4 .docsign-pp__info .docsign-pp__info__err4{
+    display: block;
+}
+=======
+.page-header, #sidebar, #workarea-content {
+    opacity: 1!important;
+}
+
+.docsign-file__signed-self{
+    color: green;
+    display: none;
+}
+.docsign-file--signed .docsign-file__signed-self{
+    display: block;
+}
+.docsign-pp{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #F8F8F8;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    z-index: 999;
+}
+.docsign-pp__form{
+    align-self: center;
+    width: 420px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: auto;
+    border-radius: 4px;
+}
+.docsign-pp__form__title{
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 25px 0;
+}
+.docsign-pp__form__descr{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 25px 0;
+}
+.docsign-pp__form__controls button:hover{
+    background-color: #1180F7;
+}
+.docsign-pp__form__controls button{
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    background: #208CFF;
+    border-radius: 2px;
+    color:#fff;
+    border: 0;
+    z-index: 1;
+    cursor: pointer;
+    outline: none !important;
+}
+.docsign-pp__form__controls button.docsign-pp__form__btnw{
+    color: #208CFF;
+    background: #fff;
+    border: 1px solid #208CFF;
+}
+.docsign-pp__form__controls button.docsign-pp__form__btnw:hover{
+    background-color: #F2F2F2;
+}
+.docsign-pp__form__status{
+    text-align:center;
+    margin: 0 0 25px 0;
+}
+.docsign-pp__form__certs{
+    margin-bottom: 25px;
+}
+.docsign-cryptoplugin__certs__label{
+    color: #6E7478;
+    font-size: 13px;
+    padding: 13px 11px 3px;
+    display: block;
+    font-weight: normal;
+}
+.docsign-cryptoplugin__certs{
+    position: relative;
+    border: 1px solid #ccc;
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAe0lEQVQ4je3OQQ7BUBCH8Z/jdNGk0kRKbJCISCsSJ3MFJ3IKhEvYzFsQtFjybSbz3v+bGf4kdph1zE4jf8MYFzQt8jxyk0efI5yxeiIvcMLw1YYSR6zv3pchVy0Xgj4O2ERfhzzoIieKGLKNWrwjJzLskX8iJ3rfyL/CFYCbERekTrXgAAAAAElFTkSuQmCC');
+}
+.docsign-cryptoplugin__certs__selected{
+    padding: 0 11px 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+    padding-right: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+.docsign-cryptoplugin__certs__select{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.docsign-pp__info{
+    margin-left: 50px;
+    width: 340px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: 4px;
+    align-self: center;
+    border: 1px solid#D4D9DC;
+    background:transparent;
+}
+.docsign-pp__info a:link{
+    color: #208CFF;
+}
+.docsign-pp__info ul{
+    padding: 0;
+    margin: 0;
+    color: #FFAF74;
+}
+.docsign-pp__info ul li{
+    margin-bottom: 20px;
+}
+.docsign-pp__info ul li span{
+    color: #000;
+}
+.docsign-pp__info-title{
+    font-size:18px;
+    margin-bottom: 22px;
+}
+.docsign-pp__info-descr{
+    font-size:16px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.docsign-pp__close{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index:2;
+}
+
+.docsign-pp__close button{
+    line-height:20px;
+    height:20px;
+    border: 0;
+    background-color: transparent;
+    color: #444;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.docsign-pp__close button:hover{
+    color: #000;
+}
+
+.docsign-pp__close button span{
+    font-size: 20px;
+    line-height:20px;
+}
+
+.docsign-pp.st1,
+.docsign-pp.st2,
+.docsign-pp.st3,
+.docsign-pp.st4,
+.docsign-pp.err1,
+.docsign-pp.err2,
+.docsign-pp.err3,
+.docsign-pp.err4{
+    display: flex;
+}
+
+.docsign-pp__info,
+.docsign-pp__form__st1,
+.docsign-pp__form__st2,
+.docsign-pp__form__st3,
+.docsign-pp__form__st4,
+.docsign-pp__form__err1,
+.docsign-pp__form__err2,
+.docsign-pp__form__err3,
+.docsign-pp__form__err4,
+.docsign-pp__info__err1,
+.docsign-pp__info__err2,
+.docsign-pp__info__err3,
+.docsign-pp__info__err4,
+.docsign-pp__close{
+    display: none;
+}
+.docsign-pp.st1 .docsign-pp__form__st1,
+.docsign-pp.st1 .docsign-pp__close{
+    display: block;
+}
+.docsign-pp.st2 .docsign-pp__form__st2,
+.docsign-pp.st2 .docsign-pp__close{
+    display: block;
+}
+.docsign-pp.st3 .docsign-pp__form__st3{
+    display: block;
+}
+.docsign-pp.st4 .docsign-pp__form__st4,
+.docsign-pp.st4 .docsign-pp__close{
+    display: block;
+}
+.docsign-pp.err1 .docsign-pp__form__err1,
+.docsign-pp.err1 .docsign-pp__close,
+.docsign-pp.err1 .docsign-pp__info,
+.docsign-pp.err1 .docsign-pp__info .docsign-pp__info__err1{
+    display: block;
+}
+.docsign-pp.err2 .docsign-pp__form__err2,
+.docsign-pp.err2 .docsign-pp__close,
+.docsign-pp.err2 .docsign-pp__info,
+.docsign-pp.err2 .docsign-pp__info .docsign-pp__info__err2{
+    display: block;
+}
+.docsign-pp.err3 .docsign-pp__form__err3,
+.docsign-pp.err3 .docsign-pp__close,
+.docsign-pp.err3 .docsign-pp__info .docsign-pp__info__err3{
+    display: block;
+}
+.docsign-pp.err4 .docsign-pp__form__err4,
+.docsign-pp.err4 .docsign-pp__close,
+.docsign-pp.err4 .docsign-pp__info .docsign-pp__info__err4{
+    display: block;
+}
+>>>>>>> e0a0eba79 (init)

@@ -1,0 +1,18 @@
+parameters:
+    level: 1
+    paths:
+        - local
+    bootstrapFiles:
+        - vendor/autoload.php
+        - vendor/mlyamin/bitrix-core/modules/main/bx_constants.php
+    excludes_analyse:
+        - '*/lang/*'
+        - '*/libs/*'
+        - '*/migrations/*'
+        - '*/components/bitrix/*'
+        - '*/modules/timeman/*'
+        - '*/modules/ldap/*'
+        - '*/install/*'
+        - '*/tests/*'
+    parallel:
+        processTimeout: 600.0

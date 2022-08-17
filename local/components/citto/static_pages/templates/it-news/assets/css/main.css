@@ -1,0 +1,24 @@
+:root{
+--bs-primary:#2AE;
+--primary-hover:#07A;
+--primary-outline:hsla(200,90%,90%,.5);
+--bs-secondary:#C5F;
+--secondary-hover:#A4D;
+--secondary-outline:hsla(280,72%,88%,.5);
+--bs-dark:#145;
+--dark-hover:#123;
+--dark-outline:hsla(210,100%,20%,.5);
+}
+
+@font-face{font-family:'PTS';font-display:swap;src:url('../fonts/PTS-R.eot');src:url('../fonts/PTS-R.eot?#iefix') format('embedded-opentype'),url('../fonts/PTS-R.woff2') format('woff2'),url('../fonts/PTS-R.woff') format('woff'),url('../fonts/PTS-R.ttf') format('truetype'),url('../fonts/PTS-R.svg#Circe') format('svg');font-weight:400;font-style:normal;}
+@font-face{font-family:'PTS';font-display:swap;src:url('../fonts/PTS-I.eot');src:url('../fonts/PTS-I.eot?#iefix') format('embedded-opentype'),url('../fonts/PTS-I.woff2') format('woff2'),url('../fonts/PTS-I.woff') format('woff'),url('../fonts/PTS-I.ttf') format('truetype'),url('../fonts/PTS-I.svg#Circe') format('svg');font-weight:400;font-style:italic;}
+@font-face{font-family:'PTS';font-display:swap;src:url('../fonts/PTS-B.eot');src:url('../fonts/PTS-B.eot?#iefix') format('embedded-opentype'),url('../fonts/PTS-B.woff2') format('woff2'),url('../fonts/PTS-B.woff') format('woff'),url('../fonts/PTS-B.ttf') format('truetype'),url('../fonts/PTS-B.svg#Circe') format('svg');font-weight:700;font-style:normal;}
+@font-face{font-family:'PTS';font-display:swap;src:url('../fonts/PTS-BI.eot');src:url('../fonts/PTS-BI.eot?#iefix') format('embedded-opentype'),url('../fonts/PTS-BI.woff2') format('woff2'),url('../fonts/PTS-BI.woff') format('woff'),url('../fonts/PTS-BI.ttf') format('truetype'),url('../fonts/PTS-BI.svg#Circe') format('svg');font-weight:700;font-style:italic;}
+
+html,body{height:100%;font-family:PTS,sans-serif;padding-right:0!important;padding-left:0!important;/*Чтобы не вылезал лишний падинг при открытии модального окна*/}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.display-1,.display-2,.display-3,.display-4{line-height:1.3;font-weight:800;}
+h1,.h1{font-size:2.75em!important;font-weight:400;}
+.display-1,.display-2,.display-3,.display-4{font-weight:300;}
+
+b{font-weight:700;}

@@ -1,0 +1,10 @@
+<?php
+require($_SERVER['DOCUMENT_ROOT']."/bitrix/header.php");
+?><?$APPLICATION->IncludeComponent(
+    "citto:direct_work",
+    "",
+    Array(
+    )
+);?><?
+require($_SERVER['DOCUMENT_ROOT']."/bitrix/footer.php");
+?>

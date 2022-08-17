@@ -1,0 +1,3 @@
+include:
+  - project: 'web/qa/gitlab-ci'
+    file: '/php/default.yaml'

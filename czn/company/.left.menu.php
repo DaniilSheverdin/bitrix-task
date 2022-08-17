@@ -1,0 +1,61 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/intranet/public/company/.left.menu.php");
+$aMenuLinks = Array(
+	Array(
+		GetMessage("COMPANY_MENU_STRUCTURE"),
+		"/czn/company/vis_structure.php",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("COMPANY_MENU_EMPLOYEES"),
+		"/czn/company/index.php",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("COMPANY_MENU_TELEPHONES"),
+		"/czn/company/telephones.php",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("COMPANY_MENU_EVENTS"),
+		"/czn/company/events.php",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('StaffChanges')"
+	),
+	Array(
+		GetMessage("COMPANY_MENU_REPORT"),
+		"/czn/company/report.php",
+		Array(),
+		Array(),
+		"IsModuleInstalled('tasks')"
+	),
+	Array(
+		GetMessage("COMPANY_MENU_LEADERS"),
+		"/czn/company/leaders.php",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("COMPANY_MENU_BIRTHDAYS"),
+		"/czn/company/birthdays.php",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("COMPANY_MENU_GALLERY"),
+		"/czn/company/gallery/", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('Gallery')" 
+	),
+);
+?>

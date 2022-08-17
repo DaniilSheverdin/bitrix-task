@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+.zayavka-na-transport [name="DATA"]{
+    width: 130px;
+    font-size: 14px;
+}
+.zayavka-na-transport [name="VREMYA_PODACHI"]{
+    width: 100px;
+    font-size: 14px;
+=======
+.zayavka-na-transport [name="DATA"]{
+    width: 130px;
+    font-size: 14px;
+}
+.zayavka-na-transport [name="VREMYA_PODACHI"]{
+    width: 100px;
+    font-size: 14px;
+>>>>>>> e0a0eba79 (init)
+}

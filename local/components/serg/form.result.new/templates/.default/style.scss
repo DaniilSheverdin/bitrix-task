@@ -1,0 +1,268 @@
+.bi_table {
+  width: 2320px;
+  height: 500px;
+  overflow-y: scroll;
+  border-right: 1px solid #bebebe;
+  &_header {
+    display: flex;
+    background-color: #36b5df;
+    color: white;
+    position: sticky;
+    top: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #bebebe;
+    .full-name {
+      width: 320px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+
+    }
+    .short-name {
+      width: 320px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+    }
+    .base-set {
+      width: 400px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+    }
+    .target-value {
+      width: 200px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+    }
+    .state-value {
+      width: 200px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+    }
+    .percent_exec {
+      width: 200px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+    }
+    .last-value {
+      width: 200px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+      > span {
+        display: block;
+        padding: 7px 0;
+      }
+    }
+    .comment {
+      width: 200px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+    }
+    .date {
+      width: 120px;
+      padding: 10px;
+      border-right: 1px solid #ffffff;
+      text-align: center;
+    }
+    .date-last-change {
+      > span {
+        display: block;
+        padding: 7px 0;
+      }
+      width: 100px;
+      padding: 10px;
+      border-right: 1px solid #bebebe;
+      text-align: center;
+    }
+  }
+  &_body {
+    input {
+      width: calc(100% - 26px);
+      height: 30px;
+      font-size: 14px;
+      padding: 0 10px;
+      border: 1px solid #d8d8d8;
+    }
+    textarea {
+      width: calc(100% - 26px);
+      height: 60px;
+      font-size: 14px;
+      padding: 0 10px;
+      border: 1px solid #d8d8d8;
+
+    }
+
+    .string {
+      display: flex;
+      border-bottom: 1px solid #bebebe;
+      border-left: 1px solid #bebebe;
+      &:nth-child(2n) {
+        background-color: #eef2f4;
+      }
+
+      .full-name {
+        width: 320px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+
+      }
+      .short-name {
+        width: 320px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+      }
+      .base-set {
+        width: 400px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+      }
+      .target-value {
+        width: 200px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+      }
+      .state-value {
+        width: 200px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+      }
+      .percent_exec {
+        width: 200px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+      }
+      .comment {
+        width: 200px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+      }
+      .last-value {
+        width: 200px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+        text-align: center;
+        > span {
+          display: block;
+          padding: 7px 0;
+        }
+      }
+      .date {
+        width: 120px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+      }
+      .date-last-change {
+        > span {
+          display: block;
+          padding: 7px 0;
+        }
+        width: 100px;
+        padding: 10px;
+        border-right: 1px solid #bebebe;
+      }
+    }
+  }
+}
+
+
+.divider {
+  width: 100%;
+  height: 35px;
+  background-color: #ebebeb;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+
+}
+
+.form-bi {
+  margin-top: 10px;
+  .control-input {
+    padding: 30px 0;
+    display: flex;
+    .input-group-label {
+      padding-right: 20px;
+      line-height: 2em;
+      min-width: 180px;
+    }
+  }
+
+  .action-list-buttons {
+    padding: 20px 5px;
+  }
+
+  select {
+    &[name="control"] {
+      width: 280px;
+      height: 30px;
+      border: 1px solid #999;
+    }
+
+    &[name="otdel"] {
+      width: 280px;
+      height: 30px;
+      border: 1px solid #999;
+    }
+  }
+
+}
+
+.bi-table-error {
+  padding: 30px 0;
+  color: #e40200;
+}
+
+#send-form-bi {
+  margin-left: 20px;
+}
+
+.bi-position-relative {
+  position: relative;
+}
+
+.loader-ajax {
+  border: 8px solid rgba(54, 181, 223, 0.2);
+  border-top: 8px solid rgb(54, 181, 223);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s ease-in infinite;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  z-index: 10;
+}
+
+.loader-background {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+.loader-background {
+  .loader-ajax {
+    z-index: 1001;
+  }
+}
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+

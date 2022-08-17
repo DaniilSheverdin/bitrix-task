@@ -1,0 +1,32 @@
+.main-grid .alert-white {
+    background-color: #fff!important;
+}
+.main-grid .alert-success {
+  border-color: #008d4c!important;
+}
+.main-grid .alert-danger,
+.main-grid .alert-error {
+  border-color: #d73925!important;
+}
+.main-grid .alert-warning {
+  border-color: #e08e0b!important;
+}
+.main-grid .alert-info {
+  border-color: #00acd6!important;
+}
+.main-grid-cell {
+	background: transparent!important;
+}
+.tooltip-inner {
+	max-width: 400px!important;
+}
+[data-toggle="tooltip"] {
+	cursor: pointer;
+}
+.mh-0 {
+	min-height: 0!important;
+}
+.bt-2 td {
+	border-top-width: 2px!important;
+	border-top-color: #000!important;
+}

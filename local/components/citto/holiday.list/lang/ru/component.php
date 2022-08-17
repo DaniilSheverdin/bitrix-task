@@ -1,0 +1,44 @@
+<?
+$MESS["BITRIX_PLANNER_PLANIROVANIE_OTPUSKO"] = "Планирование отпусков";
+$MESS["BITRIX_PLANNER_NE_USTANOVLENY_TREBU"] = "Не установлены требуемые модули (iblock, intranet, im)";
+$MESS["BITRIX_PLANNER_OTPUSK"] = "Отпуск";
+$MESS["BITRIX_PLANNER_CISLO_DNEY_OTPUSKA"] = "Число дней отпуска";
+$MESS["BITRIX_PLANNER_NE_UDALOSQ_IZMENITQ"] = "Не удалось изменить остаток отпуска";
+$MESS["BITRIX_PLANNER_DN"] = "дн.)";
+$MESS["BITRIX_PLANNER_NE_PODTVERJDENO"] = "не подтверждено";
+$MESS["BITRIX_PLANNER_DOBAVLENO"] = "Добавлено: ";
+$MESS["BITRIX_PLANNER_DOBAVLNO"] = "Добавлено: ";
+$MESS["BITRIX_PLANNER_VY_NE_MOJETE_VZATQ_O"] = "Вы не можете взять отпуск на такой период";
+$MESS["BITRIX_PLANNER_ZAPISQ_UDALENA"] = "Запись удалена";
+$MESS["BITRIX_PLANNER_ZAPISQ_UDALENA1"] = "Запись удалена: ";
+$MESS["BITRIX_PLANNER_ZAPISQ_IZMENENA"] = "Запись изменена";
+$MESS["BITRIX_PLANNER_ZAPISQ_IZMENENA1"] = "Запись изменена: ";
+$MESS["BITRIX_PLANNER_NELQZA_IZMENITQ_ZAPI"] = "Нельзя изменить запись на такой период";
+$MESS["BITRIX_PLANNER_NELQZA_IZMENITQ_ZAPI1"] = "Нельзя изменить запись";
+$MESS["BITRIX_PLANNER_ZAPISQ_NE_NAYDENA"] = "Запись не найдена";
+$MESS["BITRIX_PLANNER_PODTVERJDENO"] = "Подтверждено: ";
+$MESS["BITRIX_PLANNER_PODTVERJDNO"] = "Подтверждено: ";
+$MESS["BITRIX_PLANNER_NET_PRAV_NA_OPERACIU"] = "Нет прав на операцию";
+$MESS["BITRIX_PLANNER_U_VAS_NET_PRAV_NA_ET"] = "У вас нет прав на эту операцию";
+$MESS["BITRIX_PLANNER_NED"] = "нед. ";
+$MESS["BITRIX_PLANNER_DN1"] = "дн. ";
+$MESS["BITRIX_PLANNER_C"] = "ч. ";
+$MESS["BITRIX_PLANNER_MIN"] = "мин. ";
+$MESS["BITRIX_PLANNER_VY_NE_MOJETE_VZATQ_O_14"] = "Один из отпусков должен быть 14/21 дней";
+$MESS["BITRIX_PLANNER_VY_NE_MOJETE_VZATQ_O_KRAT"] = "Отпуск не должен превышать 21 день и должен быть кратен 7 дням за исключением остатка от распланированного";
+$MESS["BITRIX_PLANNER_VY_NE_MOJETE_VZATQ_O_PERIOD"] = "Период между отпусками составляет менее 30 дней";
+
+$MESS['LESS_30_DAYS'] = 'Период между отпусками составляет менее 30 дней';
+$MESS['MORE_WORKPERIOD'] = 'Количество дней превышает допустимое значение по данному рабочему периоду. Максимально допустимое значение: #sumLeft# дней до #firstPeriod#';
+$MESS['NEED_MIN_PERIOD'] = 'Обратите внимание, до #firstPeriod# необходимо использовать минимум #leftAll# дней. Максимально допустимое значение: #maxLeftAll#';
+$MESS['FIRST_MIN_DAYS'] = 'Сначала распланируйте не менее #leftAll# дней до #firstPeriod#';
+$MESS['ONLY_CURR_YEAR'] = 'Вы не можете взять отпуск на такой период, так как в нём должен быть указан только #year# год';
+$MESS['FIRST_VACATION'] = 'Первый распланированный отпуск должен составлять не менее 14 дней';
+$MESS['FIRST_VACATION_14'] = 'Первый распланированный отпуск должен составлять 14 дней';
+$MESS['ANY_VACATION_14'] = 'Один из распланированных отпусков должен составлять не менее 14 дней';
+$MESS['PERIOD_MORE_14'] = 'Обратите внимание, Ваш планируемый период превышает 14 дней';
+$MESS['PERIOD_DIVIDE_7'] = 'Обратите внимание, Ваш планируемый период не кратен 7 дням';
+$MESS['REST_LESS_7'] = 'Обратите внимание, остаток для распланирования составляет менее 7 дней';
+$MESS['PERIOD_LESS_7'] = 'Обратите внимание, Ваш планируемый период менее 7 дней';
+$MESS['CANT_VACATION'] = 'Вы не можете взять отпуск на такой период';
+?>

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'R';
+    font-display: swap;
+    src: url('../fonts/R.eot');
+    src: url('../fonts/R.eot?#iefix') format('embedded-opentype'), url('../fonts/R.woff2') format('woff2'), url('../fonts/R.woff') format('woff'), url('../fonts/R.ttf') format('truetype'), url('../fonts/R.svg#R') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'R';
+    font-display: swap;
+    src: url('../fonts/RI.eot');
+    src: url('../fonts/RI.eot?#iefix') format('embedded-opentype'), url('../fonts/RI.woff2') format('woff2'), url('../fonts/RI.woff') format('woff'), url('../fonts/RI.ttf') format('truetype'), url('../fonts/RI.svg#R') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'R';
+    font-display: swap;
+    src: url('../fonts/RB.eot');
+    src: url('../fonts/RB.eot?#iefix') format('embedded-opentype'), url('../fonts/RB.woff2') format('woff2'), url('../fonts/RB.woff') format('woff'), url('../fonts/RB.ttf') format('truetype'), url('../fonts/RB.svg#R') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'R';
+    font-display: swap;
+    src: url('../fonts/RBI.eot');
+    src: url('../fonts/RBI.eot?#iefix') format('embedded-opentype'), url('../fonts/RBI.woff2') format('woff2'), url('../fonts/RBI.woff') format('woff'), url('../fonts/RBI.ttf') format('truetype'), url('../fonts/RBI.svg#R') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'R';
+    font-display: swap;
+    src: url('../fonts/RL.eot');
+    src: url('../fonts/RL.eot?#iefix') format('embedded-opentype'), url('../fonts/RL.woff2') format('woff2'), url('../fonts/RL.woff') format('woff'), url('../fonts/RL.ttf') format('truetype'), url('../fonts/RL.svg#R') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'R';
+    font-display: swap;
+    src: url('../fonts/RLI.eot');
+    src: url('../fonts/RLI.eot?#iefix') format('embedded-opentype'), url('../fonts/RLI.woff2') format('woff2'), url('../fonts/RLI.woff') format('woff'), url('../fonts/RLI.ttf') format('truetype'), url('../fonts/RLI.svg#R') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RC';
+    font-display: swap;
+    src: url('../fonts/RCB.eot');
+    src: url('../fonts/RCB.eot?#iefix') format('embedded-opentype'), url('../fonts/RCB.woff2') format('woff2'), url('../fonts/RCB.woff') format('woff'), url('../fonts/RCB.ttf') format('truetype'), url('../fonts/RCB.svg#R') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'RC';
+    font-display: swap;
+    src: url('../fonts/RCBI.eot');
+    src: url('../fonts/RCBI.eot?#iefix') format('embedded-opentype'), url('../fonts/RCBI.woff2') format('woff2'), url('../fonts/RCBI.woff') format('woff'), url('../fonts/RCBI.ttf') format('truetype'), url('../fonts/RCBI.svg#R') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: condensed;
+}

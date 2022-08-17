@@ -1,0 +1,414 @@
+.bootstrap-select .dropdown-menu {
+    max-width: 100% !important;
+}
+body #workarea-content ._vue, body #workarea-content ._vue-bp {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+._vue .form-group.row {
+    background-color: #FFF;
+}
+
+form._vue {
+    box-shadow: 0 0 2px 1px #CDCDCD;
+}
+
+._vue .form-group.row label.col-form-label,
+._vue-bp label.col-form-label {
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+}
+
+._vue .form-group.row input.form-control,
+._vue .form-group.row div.form-control,
+._vue-bp input.form-control,
+._vue-bp select.form-control {
+    height: 45px;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+._vue .form-group.row textarea.form-control,
+._vue-bp textarea.form-control {
+    height: 110px;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+._vue div.form-control,
+._vue-bp div.form-control {
+    height: auto !important;
+    min-height: 44px;
+    max-width: none;
+}
+
+._vue div.form-control a.bizproc-type-control-user-link, ._vue-bp div.form-control a.bizproc-type-control-user-link {
+    margin: 6px 7px 6px 18px;
+}
+
+._vue .form-group.row input.form-control:focus,
+._vue .form-group.row textarea.form-control:focus,
+._vue .bootstrap-select > button.dropdown-toggle:focus,
+._vue-bp textarea.form-control:focus,
+._vue-bp input.form-control:focus,
+._vue-bp select.form-control:focus
+{
+    outline: none;
+    border: 1px solid #109AFF;
+    box-shadow: none;
+}
+
+._vue .btn.btn-success[type="submit"],
+._vue .btn.btn-success[type="submit"]:focus,
+._vue .btn.btn-success[type="submit"]:active,
+._vue-bp .btn.bp-button[type="submit"],
+._vue-bp .btn.bp-button[type="submit"]:focus,
+._vue-bp .btn.bp-button[type="submit"]:active,
+._vue-bp a.btn.bp-button,
+._vue-bp a.btn.bp-button:focus,
+._vue-bp a.btn.bp-button:active {
+    background-color: #D4F76A;
+    border-radius: 5px;
+    border: 1px solid #D4F76A;
+    width: 127px;
+    height: var(--height-input);
+    color: #535C5D;
+    font-family: Roboto, Helvetca, Arial, sans-sarif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    box-shadow: none;
+}
+
+._vue-bp a.btn.bp-button,
+._vue-bp a.btn.bp-button:focus,
+._vue-bp a.btn.bp-button:active {
+    line-height: 2em !important;
+}
+
+._vue-bp .btn-light:not(:disabled):not(.disabled).active,
+._vue-bp .btn-light:not(:disabled):not(.disabled):active,
+._vue-bp .btn-light.dropdown-toggle,
+._vue .btn-light:not(:disabled):not(.disabled).active,
+._vue .btn-light:not(:disabled):not(.disabled):active,
+._vue .btn-light.dropdown-toggle,
+._vue .show > .btn-light.dropdown-toggle {
+    background-color: #fff;
+}
+
+._vue .bootstrap-select > .dropdown-menu.show, ._vue-bp .bootstrap-select > .dropdown-menu.show {
+    border: 1px solid #109AFF;
+    border-radius: 0;
+}
+
+._vue .bootstrap-select > .dropdown-menu.show .bs-searchbox input[type="text"], ._vue-bp .bootstrap-select > .dropdown-menu.show .bs-searchbox input[type="text"] {
+    border: 1px solid #109AFF;
+}
+
+._vue .dropdown.bootstrap-select.show .btn.dropdown-toggle, ._vue-bp .dropdown.bootstrap-select.show .btn.dropdown-toggle {
+    border: 1px solid #109AFF;
+}
+
+._vue .dropdown-item, ._vue-bp .dropdown-item {
+    color: #000;
+    font-size: 14px;
+}
+
+._vue .dropdown-item.selected, ._vue-bp .dropdown-item.selected,
+._vue .dropdown-item:active, ._vue-bp .dropdown-item:active,
+._vue .dropdown-item.active, ._vue-bp .dropdown-item.active {
+    color: #0094FF;
+    background-color: rgba(201, 201, 201, 0.1);
+    position: relative;
+    padding-right: 25px;
+}
+
+._vue .dropdown-item.selected:after, ._vue-bp .dropdown-item.selected:after {
+    content: '✓';
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 10px;
+    z-index: 101;
+    display: inline-block;
+    background-color: #0094FF;
+    border-radius: 50%;
+}
+
+._vue .dropdown-item.active, .dropdown-item:active, ._vue-bp .dropdown-item.active, .dropdown-item:active {
+    border-radius: 0;
+}
+
+._vue .btn.btn-success[type="submit"]:focus, ._vue .btn.btn-success[type="submit"]:active {
+    outline: none !important;
+    background-color: rgba(212, 247, 106, 0.8);
+    border: 1px solid rgba(212, 247, 106, 0.8);
+    box-shadow: none !important;
+}
+
+._vue .bootstrap-select .btn, ._vue-bp .bootstrap-select .btn {
+    font-size: 14px;
+}
+
+._vue .bootstrap-select > button.dropdown-toggle, ._vue-bp .bootstrap-select > button.dropdown-toggle {
+    height: 45px;
+    border-radius: 0;
+}
+
+._vue .bootstrap-select > button.dropdown-toggle .filter-option-inner-inner,
+._vue-bp .bootstrap-select > button.dropdown-toggle .filter-option-inner-inner {
+    line-height: 30px;
+}
+
+._vue .bizproc-field-description, ._vue-bp .bizproc-field-description {
+    font-style: normal;
+    color: #999;
+}
+
+._vue .loader-ajax {
+    border: 8px solid rgba(16, 154, 255, 0.2);
+    border-top: 8px solid rgba(16, 154, 255, 1);
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    animation: spin 1s ease-in infinite;
+    position: absolute;
+    top: calc(50% - 23px);
+    left: calc(50% - 23px);
+    z-index: 1060;
+}
+
+._vue .loader-background {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 100vh;
+    width: 100vw;
+    z-index: 1069;
+    top: 0;
+    left: 0;
+}
+
+._vue .loader-background .loader-ajax {
+    z-index: 1001;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+._vue .form-group input[type="date"],
+._vue-bp ._inner input[type="date"] {
+    padding-right: 32px;
+    background: url(../images/calendar_icon.svg) no-repeat calc(100% - 10px) center #FFF;
+}
+
+._vue .form-group input[type="date"]:focus,
+._vue-bp ._inner input[type="date"]:focus {
+    background: url(../images/calendar_icon_active.svg) no-repeat calc(100% - 10px) center #FFF;
+}
+
+._vue .hint,
+._vue-bp .hint {
+    color: #999696;
+    font-weight: 400;
+    font-family: Roboto, Helvetca, Arial, sans-sarif;
+}
+
+._vue-bp div[data-role="user-selector"], ._vue div[data-role="user-selector"] {
+    border: 1px solid #109AFF;
+    border-radius: 0;
+}
+
+._vue-bp div[data-role="user-selector"] .bizproc-type-control-user-item, ._vue div[data-role="user-selector"] .bizproc-type-control-user-item {
+    background-color: #FFF;
+    border: 1px solid #8B8787;
+    border-radius: 18px;
+}
+
+._vue-bp div[data-role="user-selector"] .bizproc-type-control-user-item .bizproc-type-control-user-name, ._vue div[data-role="user-selector"] .bizproc-type-control-user-item .bizproc-type-control-user-name {
+    color: #109AFF;
+}
+
+._vue-bp div[data-role="user-selector"] .bizproc-type-control-user-item .bizproc-type-control-user-delete, ._vue div[data-role="user-selector"] .bizproc-type-control-user-item .bizproc-type-control-user-delete {
+    color: #8B8787;
+}
+
+._vue-bp div[data-role="user-selector"] .bizproc-type-control-user-item .bizproc-type-control-user-delete:before,
+._vue-bp div[data-role="user-selector"] .bizproc-type-control-user-item .bizproc-type-control-user-delete:after,
+._vue div[data-role="user-selector"] .bizproc-type-control-user-item .bizproc-type-control-user-delete:before,
+._vue div[data-role="user-selector"] .bizproc-type-control-user-item .bizproc-type-control-user-delete:after {
+    background-color: #8B8787;
+    width: 10px;
+    height: 1px;
+}
+
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+    outline: none !important;
+}
+
+._vue-bp .btn.bp-button[name="pospis_approve"] + .btn.bp-button[name="approve"] {
+    display: none;
+}
+
+._vue-bp .btn-block + .btn-block {
+    margin-top: 3px;
+}
+
+._vue-bp .btn.bp-button.bp-button-decline, ._vue-bp .btn.bp-button.bp-button-decline:focus, ._vue-bp .btn.bp-button.bp-button-decline:active {
+    background-color: #cc1a00 !important;
+    color: #FFF;
+}
+
+._vue-bp .__pseudo-checkbox {
+    width: 67px;
+    height: 32px;
+    background-color: #FFF;
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid #C4C4C4;
+    cursor: pointer;
+}
+
+._vue-bp .__pseudo-checkbox:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    left: 3px;
+    top: 3px;
+    transition: all 0.1s linear;
+}
+
+._vue-bp .__pseudo-checkbox.checked {
+    border: 1px solid #0094FF;
+}
+
+._vue-bp .__pseudo-checkbox.checked:after {
+    background-color: #0094FF;
+    left: calc(100% - 27px);
+}
+
+._vue-bp .bizproc-type-control-date, ._vue-bp .bizproc-type-control-datetime {
+    max-width: none;
+}
+
+._vue-bp .table_content.table-bordered td {
+    width: 17% !important;
+}
+
+._vue-bp .table_content.table-bordered td a.btn {
+    padding: 0;
+    height: auto;
+}
+
+._vue-bp input.hd {
+    width: 100%;
+}
+
+._vue .form-check, ._vue .form-check,
+._vue-bp .form-check, ._vue-bp .form-check * {
+    cursor: pointer;
+}
+
+._vue .form-check-inline .form-check-input, ._vue-bp .form-check-inline .form-check-input {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+._vue-bp .fileLabelUploader input[type="file"] {
+    display: none;
+}
+
+._vue-bp .fileLabelUploader {
+    margin-bottom: 20px;
+    border: 2px dashed #C4C4C4;
+    padding: 15px 10px;
+    border-radius: 0;
+    background-color: #FFF;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2em;
+    width: 100%;
+    min-height: 50px;
+    color: #8B8787;
+}
+
+._vue-bp .file-selectdialog .file-extended .file-selector {
+    padding-left: 0;
+}
+
+._vue-bp .file-selectdialog .file-extended .file-selector .file-load-img {
+    display: none;
+}
+
+._vue-bp .file-selectdialog {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    box-shadow: none;
+}
+
+._vue-bp .file-selectdialog .file-extended {
+    margin: 0;
+    padding: 10px 0;
+}
+
+._vue-bp .file-selectdialog .file-extended .file-selector,
+._vue-bp .file-selectdialog .file-extended .file-selector:hover {
+    border: 2px dashed #d4dde1;
+    padding: 15px 10px;
+    border-radius: 0;
+    margin: 0;
+    background-color: #FFF;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+._vue-bp .file-selectdialog-switcher {
+    display: none !important;
+}
+
+._vue-bp ._upl-file {
+    color: #0094FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+._vue-bp ._upl-file .close:before {
+    content: 'x';
+    font-size: 14px;
+    color: #F00;
+    width: 18px;
+    height: 18px;
+}
+
+._vue-bp .bizproc-field-description {
+    padding: 10px 15px;
+    display: block;
+    width: calc(77%);
+    height: auto;
+    color: #535C5D;
+    font-size: 14px;
+    position: absolute;
+    top: calc(100%);
+    left: calc(101%);
+    border-radius: 10px;
+    background-color: #F9F7F7;
+    box-shadow: 0 0 2px #C4C4C4;
+}
+
+._vue .bizproc-type-control-user-input, ._vue-bp .bizproc-type-control-user-input {
+    font-size: 16px;
+    margin: 0 !important;
+}

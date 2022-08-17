@@ -1,0 +1,44 @@
+<?
+if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
+{
+	die();
+}
+
+/**
+ * Bitrix vars
+ *
+ * @var array $arParams
+ * @var array $arResult
+ * @var CBitrixComponentTemplate $this
+ * @global CMain $APPLICATION
+ */
+
+?>
+<span class="fields string">
+<?
+if(!empty($arParams['arUserField']['FIELD_NAME']) && $arParams['arUserField']['FIELD_NAME'] == "UF_LAST_COMMENT"){
+	$arResult["VALUE"] = $arResult["~VALUE"];
+}
+$first = true;
+foreach ($arResult["VALUE"] as $res)
+{
+	if (!$first)
+	{
+		?><span class="fields separator"></span><?
+	}
+	else
+	{
+		$first = false;
+	}
+
+	if ($arParams['arUserField']['PROPERTY_VALUE_LINK'] <> '')
+	{
+		$res = '<a href="'.htmlspecialcharsbx(str_replace('#VALUE#', urlencode($res), $arParams['arUserField']['PROPERTY_VALUE_LINK'])).'">'.$res.'</a>';
+	}
+
+?><span class="fields string"><?=$res?></span><?
+
+}
+?>
+</span>
+

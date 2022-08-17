@@ -1,0 +1,56 @@
+$blue: #12183c;
+$blue-lighten: #1f3347;
+$blue-light: #484e72;
+$violet: #555b81;
+$grey: #6d6d6d;
+$red: #f04e40;
+$red-darken: #c15a51;
+$yellow: #eabe24;
+$green: #8fbf04;
+
+@mixin search-input {
+  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+  height: 2.75rem;
+
+  color: $blue-light;
+  line-height: 1.1875rem;
+
+  border: 1px solid $blue-light;
+  border-radius: 0.3125rem;
+}
+
+@mixin search-button {
+  border: 1px solid $blue-light;
+  border-left: none;
+  border-top-right-radius: 0.3125rem;
+  border-bottom-right-radius: 0.3125rem;
+}
+
+@mixin table-section-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 2.75rem;
+
+  border-radius: 5rem;
+  transition: all .3s;
+}
+
+@mixin h1 {
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+  text-transform: uppercase;
+}
+
+@mixin accordion-label {
+  color: $blue;
+
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}

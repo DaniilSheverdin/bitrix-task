@@ -1,0 +1,52 @@
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 80%;
+  height: 100vh;
+
+  background: $blue;
+  z-index: 9999;
+
+  &__close-btn {
+    display: block;
+    margin: 0.5rem 0.5rem 0.5rem auto;
+    padding: 0;
+
+    background: none;
+    border: none;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0 2.25rem;
+
+    color: #fff;
+  }
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  opacity: 1;
+
+  transition: all 0.5s ease-in-out;
+}

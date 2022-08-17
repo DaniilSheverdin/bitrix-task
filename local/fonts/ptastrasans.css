@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'PT Astra Sans';
+    src: local('PT Astra Sans'), local('PTAstraSans-Regular'), url('Ptastrasans.woff2') format('woff2'), url('Ptastrasans.woff') format('woff'), url('Ptastrasans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Astra Sans';
+    src: local('PT Astra Sans Italic'), local('PTAstraSans-Italic'), url('Ptastrasansitalic.woff2') format('woff2'), url('Ptastrasansitalic.woff') format('woff'), url('Ptastrasansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'PT Astra Sans';
+    src: local('PT Astra Sans Bold'), local('PTAstraSans-Bold'), url('Ptastrasansbold.woff2') format('woff2'), url('Ptastrasansbold.woff') format('woff'), url('Ptastrasansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Astra Sans';
+    src: local('PT Astra Sans Bold Italic'), local('PTAstraSans-BoldItalic'), url('Ptastrasansbolditalic.woff2') format('woff2'), url('Ptastrasansbolditalic.woff') format('woff'), url('Ptastrasansbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

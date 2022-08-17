@@ -1,0 +1,283 @@
+.workarea-content-paddings {
+    padding: 0 !important;
+}
+
+#lnpa-nav, #lnpa-find {
+    border-bottom: 3px solid #eef2f4;
+}
+
+section {
+    padding: 15px;
+}
+
+#menu-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+#menu-list .menu-item {
+    color: #8f8e96;
+    border-bottom: 1.4px solid #8f8e96;
+    text-transform: capitalize;
+}
+
+#menu-list .menu-item:hover {
+    color: #535c68;
+}
+
+#menu-list .active {
+    color: #1882fe;
+    border-color: #1882fe;
+}
+
+#lnpa-find label {
+    justify-content: start;
+}
+
+#lnpa-find .form div div:nth-child(2) {
+    margin-top: 10px;
+}
+
+#lnpa-find .form input, #lnpa-find .form select {
+    font-size: 14px;
+}
+
+#lnpa-find .form-control {
+    appearance: auto;
+}
+
+#find {
+    width: 100%;
+}
+
+#lnpa .title {
+    color: #555;
+}
+
+#lnpa-table td, #lnpa-table th {
+    vertical-align: middle;
+    color: #535c69;
+}
+
+#lnpa-detail-view .buttons {
+    margin-bottom: 30px;
+}
+
+.download-doc, .bookmark-doc {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #535c68;
+}
+
+.edit-doc, .del-doc {
+    font-size: 20px;
+    color: #535c68;
+}
+
+.download-doc i, .bookmark-doc i, .edit-doc i {
+    margin-right: 3px;
+    border: unset;
+}
+
+.download-doc:hover span, .bookmark-doc:hover span {
+    color: #2067b0;
+    border-color: #2067b0;
+}
+
+#lnpa-detail-view .items .item div:nth-child(odd) {
+    color: #535c69;
+}
+
+#lnpa-detail-view .items .item {
+    margin-bottom: 10px;
+}
+
+#lnpa-detail-actions form .item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#lnpa-detail-actions form label {
+    justify-content: start;
+}
+
+#lnpa-detail-actions .form-control {
+    width: 100%;
+}
+
+#lnpa-detail-actions input[type="submit"] {
+    width: 100%;
+}
+
+#lnpa-detail-actions .list-files .items {
+    padding: 0.375rem 0.75rem;
+    font-size: 1.0rem;
+    line-height: 1.3;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    max-height: 200px;
+    overflow: auto;
+    margin-top: 5px;
+    width: max-content;
+}
+
+#lnpa-detail-actions .list-files .items a {
+    color: grey;
+}
+
+#lnpa-detail-actions .list-files .item {
+    align-items: center;
+}
+
+#lnpa-detail-actions .list-files .item .del {
+    margin-left: 10px;
+    color: #d2403c;
+    cursor: pointer;
+}
+
+#lnpa-detail-actions #file-upload a {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.file-selectdialog-switcher {
+    background:  #616a76;
+}
+
+#lnpa-last-doc .item {
+    display: flex;
+    width: 100%;
+}
+
+#lnpa-last-doc .item, #lnpa-moderation-view .item {
+    color: #535c68;
+}
+
+#lnpa-last-doc .structure, #lnpa-moderation-view .structure {
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    transform: unset !important;
+    max-height: unset !important;
+}
+
+.dropdown-menu .inner {
+    max-height: 300px !important;
+}
+
+.dropdown-menu li {
+    font-size: 14px;
+}
+
+.bootstrap-select[class*=col-] .dropdown-toggle {
+    border: 1px solid #ced4da;
+}
+
+.pr-15 {
+    padding-right: 15px;
+}
+
+#lnpa-errors .errors {
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#lnpa-errors .errors p {
+    color: red;
+    margin-bottom: 0;
+}
+
+.js-result-parent {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #c6cdd3;
+    width: 569px;
+    max-width: 100%;
+    z-index: 1;
+    max-height: 10rem;
+    overflow-y: scroll;
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(45, 56, 95, 0.3);
+    -moz-box-shadow:    0px 0px 31px 0px rgba(45, 56, 95, 0.3);
+    box-shadow:         0px 0px 31px 0px rgba(45, 56, 95, 0.3);
+}
+
+.js-result-parent.active {
+    display: block;
+}
+
+.js-result-parent .item-parent {
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.js-result-parent .item-parent:nth-last-child(1) {
+    border-bottom: 0;
+}
+
+.js-result-parent .item-parent:hover {
+    background: #aebcd7;
+}
+
+.item-parent span {
+    font-size: 11px;
+    max-height: 2rem;
+    line-height: 1rem;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: 400;
+}
+
+/*Временное скрытие полей*/
+#lnpa-detail-add #UF_FULL_CONTRACTOR, #lnpa-detail-add #UF_ORGANIZATIONAL_LEGAL,
+#lnpa-detail-edit #UF_FULL_CONTRACTOR, #lnpa-detail-edit #UF_ORGANIZATIONAL_LEGAL
+{
+    display: none;
+}
+
+#pagination {
+    color: #535c69;
+    margin-bottom: 20px;
+}
+
+#pagination .current {
+    color: grey;
+}
+
+
+#pagination button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: unset;
+    color: #276efd;
+}
+
+#sign-popup  {
+    width: 70%;
+    height: 70%;
+    top: 0;
+    left: 0;
+}

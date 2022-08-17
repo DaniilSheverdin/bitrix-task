@@ -1,0 +1,274 @@
+<xs:schema xmlns:tns="http://www.itilium.cit" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.itilium.cit" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:complexType name="CommunicationType">
+		<xs:sequence>
+			<xs:element name="Messages" type="tns:ListType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ComparisonTypeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Greater"/>
+			<xs:enumeration value="GreaterOrEqual"/>
+			<xs:enumeration value="InList"/>
+			<xs:enumeration value="Less"/>
+			<xs:enumeration value="LessOrEqual"/>
+			<xs:enumeration value="NotInList"/>
+			<xs:enumeration value="NotEqual"/>
+			<xs:enumeration value="Equal"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="DataRequestType">
+		<xs:choice>
+			<xs:element name="ObjectUID" type="tns:UIDType" minOccurs="0"/>
+			<xs:element name="File" type="tns:FileType" minOccurs="0"/>
+			<xs:element name="Filter" type="tns:FilterType" minOccurs="0"/>
+			<xs:element name="Status" type="tns:StatusType" minOccurs="0"/>
+			<xs:element name="Task" type="tns:TaskType" minOccurs="0"/>
+			<xs:element name="ServiceInformation" type="tns:TaskServiceInformationType" minOccurs="0"/>
+			<xs:element name="Solution" type="xs:string" minOccurs="0"/>
+			<xs:element name="Message" type="tns:MessageType" minOccurs="0"/>
+			<xs:element name="Incident" type="tns:IncidentType" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="DataResponseType">
+		<xs:choice>
+			<xs:element name="AvailableОperations" type="tns:ListType" minOccurs="0"/>
+			<xs:element name="Services" type="tns:ListType" minOccurs="0"/>
+			<xs:element name="Statuses" type="tns:ListType" minOccurs="0"/>
+			<xs:element name="UID" type="tns:UIDType" minOccurs="0"/>
+			<xs:element name="Priorities" type="tns:ListType" minOccurs="0"/>
+			<xs:element name="FileList" type="tns:ListType" minOccurs="0"/>
+			<xs:element name="File" type="tns:FileType" minOccurs="0"/>
+			<xs:element name="Status" type="tns:StatusType" minOccurs="0"/>
+			<xs:element name="StatusHistory" type="tns:ListType" minOccurs="0"/>
+			<xs:element name="Tasks" type="tns:ListType" minOccurs="0"/>
+			<xs:element name="APIVersion" type="xs:string" minOccurs="0"/>
+			<xs:element name="Communication" type="tns:CommunicationType" minOccurs="0"/>
+			<xs:element name="Incidents" type="tns:ListType" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="ExecutorType">
+		<xs:complexContent>
+			<xs:extension base="tns:ObjectRefType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="FileType">
+		<xs:choice>
+			<xs:element name="UID" type="tns:UIDType" minOccurs="0"/>
+			<xs:element name="Data" type="xs:string" minOccurs="0"/>
+			<xs:element name="Name" type="xs:string" minOccurs="0"/>
+			<xs:element name="Ext" type="xs:string" minOccurs="0"/>
+			<xs:element name="Description" type="xs:string" nillable="true" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="FilterConditionType">
+		<xs:all>
+			<xs:element name="Field" type="xs:string"/>
+			<xs:element name="ComparisonType" type="tns:ComparisonTypeType"/>
+			<xs:element name="Value"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="FilterElementType">
+		<xs:choice>
+			<xs:element name="Condition" type="tns:FilterConditionType" minOccurs="0"/>
+			<xs:element name="Group" type="tns:FilterGroupType" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="FilterGroupType">
+		<xs:sequence>
+			<xs:element name="Type" type="tns:FilterGroupTypeType"/>
+			<xs:element name="FilterElement" type="tns:FilterElementType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="FilterGroupTypeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AND"/>
+			<xs:enumeration value="OR"/>
+			<xs:enumeration value="NOT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="FilterType">
+		<xs:sequence>
+			<xs:element name="FilterElement" type="tns:FilterElementType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IncidentType">
+		<xs:choice>
+			<xs:element name="UID" type="tns:UIDType" minOccurs="0"/>
+			<xs:element name="Service" type="tns:ServiceType" minOccurs="0"/>
+			<xs:element name="ServiceComponent" type="tns:ServiceComponentType" minOccurs="0"/>
+			<xs:element name="Status" type="tns:StatusType" minOccurs="0"/>
+			<xs:element name="Description" type="xs:string" minOccurs="0"/>
+			<xs:element name="Solution" type="xs:string" minOccurs="0"/>
+			<xs:element name="WorkingGroup" type="tns:WorkingGroupType" minOccurs="0"/>
+			<xs:element name="Executor" type="tns:ExecutorType" minOccurs="0"/>
+			<xs:element name="IncidentInitiator" type="tns:InitiatorType" minOccurs="0"/>
+			<xs:element name="DateStart" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="DateEnd" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="Priority" type="tns:PriorityType" minOccurs="0"/>
+			<xs:element name="Incident" type="tns:IncidentType" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="InitiatorType">
+		<xs:complexContent>
+			<xs:extension base="tns:ObjectRefType">
+				<xs:choice>
+					<xs:element name="ContactInformation" type="xs:string" minOccurs="0"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ListType">
+		<xs:choice>
+			<xs:element name="Status" type="tns:StatusType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ServiceComponent" type="tns:ServiceComponentType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Priority" type="tns:PriorityType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="File" type="tns:FileType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="StatusHistoryItem" type="tns:StatusHistoryItemType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Task" type="tns:TaskType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Service" type="tns:ServiceType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="OperationDescription" type="tns:OperationDescriptionType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Message" type="tns:MessageType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Incident" type="tns:IncidentType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="MessageType">
+		<xs:choice>
+			<xs:element name="UID" minOccurs="0"/>
+			<xs:element name="Author" type="xs:string" minOccurs="0"/>
+			<xs:element name="Date" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="Text" type="xs:string"/>
+			<xs:element name="Files" type="tns:ListType" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="ObjectRefType">
+		<xs:choice>
+			<xs:element name="UID" type="tns:UIDType"/>
+			<xs:element name="Name" type="xs:string" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="OperationDescriptionType">
+		<xs:sequence>
+			<xs:element name="Operation" type="tns:OperationType"/>
+			<xs:element name="Description" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="OperationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AvailableОperations"/>
+			<xs:enumeration value="GetTechnicalServices"/>
+			<xs:enumeration value="GetTaskStatuses"/>
+			<xs:enumeration value="GetPriorities"/>
+			<xs:enumeration value="CreateTask"/>
+			<xs:enumeration value="UpdateTask"/>
+			<xs:enumeration value="DeleteTask"/>
+			<xs:enumeration value="GetTasks"/>
+			<xs:enumeration value="GetTaskStatus"/>
+			<xs:enumeration value="GetTaskStatusHistory"/>
+			<xs:enumeration value="SetTaskStatus"/>
+			<xs:enumeration value="AddFile"/>
+			<xs:enumeration value="GetFile"/>
+			<xs:enumeration value="DeleteFile"/>
+			<xs:enumeration value="GetFileList"/>
+			<xs:enumeration value="GetAPIVersion"/>
+			<xs:enumeration value="GetCommunication"/>
+			<xs:enumeration value="AddCommunicationMessage"/>
+			<xs:enumeration value="GetIncidentStatusHistory"/>
+			<xs:enumeration value="GetIncidentStatus"/>
+			<xs:enumeration value="SetIncidentStatus"/>
+			<xs:enumeration value="GetIncidents"/>
+			<xs:enumeration value="CreateIncident"/>
+			<xs:enumeration value="UpdateIncident"/>
+			<xs:enumeration value="DeleteIncident"/>
+			<xs:enumeration value="GetBusinessServices"/>
+			<xs:enumeration value="GetIncidentStatuses"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PriorityType">
+		<xs:complexContent>
+			<xs:extension base="tns:ObjectRefType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ResponseType">
+		<xs:sequence>
+			<xs:element name="UID" type="tns:UIDType"/>
+			<xs:element name="Result" type="xs:boolean"/>
+			<xs:element name="Description" type="xs:string"/>
+			<xs:element name="Data" type="tns:DataResponseType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ServiceComponentType">
+		<xs:complexContent>
+			<xs:extension base="tns:ObjectRefType">
+				<xs:choice>
+					<xs:element name="Description" type="xs:string" nillable="true" minOccurs="0"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ServiceType">
+		<xs:complexContent>
+			<xs:extension base="tns:ObjectRefType">
+				<xs:choice>
+					<xs:element name="ServiceComponents" type="tns:ListType" minOccurs="0"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StatusHistoryItemType">
+		<xs:sequence>
+			<xs:element name="DateSet" type="xs:dateTime"/>
+			<xs:element name="Status" type="tns:StatusType"/>
+			<xs:element name="User" type="tns:UserType" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StatusType">
+		<xs:complexContent>
+			<xs:extension base="tns:ObjectRefType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TaskServiceInformationType">
+		<xs:choice>
+			<xs:element name="TransferDate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="StatusComment" type="xs:string" minOccurs="0"/>
+			<xs:element name="NewService" type="tns:ServiceType" minOccurs="0"/>
+			<xs:element name="NewServiceComponent" type="tns:ServiceComponentType" minOccurs="0"/>
+			<xs:element name="NewPriority" type="tns:PriorityType" minOccurs="0"/>
+			<xs:element name="NewDateEnd" type="xs:dateTime" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="TaskType">
+		<xs:choice>
+			<xs:element name="UID" type="tns:UIDType" minOccurs="0"/>
+			<xs:element name="Service" type="tns:ServiceType" minOccurs="0"/>
+			<xs:element name="ServiceComponent" type="tns:ServiceComponentType" minOccurs="0"/>
+			<xs:element name="Subject" type="xs:string" minOccurs="0"/>
+			<xs:element name="Description" type="xs:string" minOccurs="0"/>
+			<xs:element name="WorkingGroup" type="tns:WorkingGroupType" minOccurs="0"/>
+			<xs:element name="Executor" type="tns:ExecutorType" minOccurs="0"/>
+			<xs:element name="DateStart" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="DateEnd" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="Status" type="tns:StatusType" minOccurs="0"/>
+			<xs:element name="Priority" type="tns:PriorityType" minOccurs="0"/>
+			<xs:element name="IncidentInitiator" type="tns:InitiatorType" minOccurs="0"/>
+			<xs:element name="TaskInitiator" type="tns:InitiatorType" minOccurs="0"/>
+			<xs:element name="ServiceInformation" type="tns:TaskServiceInformationType" minOccurs="0"/>
+			<xs:element name="Solution" type="xs:string" minOccurs="0"/>
+			<xs:element name="Incident" type="tns:IncidentType" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:simpleType name="UIDType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="UserType">
+		<xs:complexContent>
+			<xs:extension base="tns:ObjectRefType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="WorkingGroupType">
+		<xs:complexContent>
+			<xs:extension base="tns:ObjectRefType"/>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

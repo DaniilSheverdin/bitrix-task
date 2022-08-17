@@ -1,0 +1,55 @@
+.level-1 {
+    padding-left: .75rem!important;
+}
+.level-2 {
+    padding-left: 2.75rem!important;
+}
+.level-3 {
+    padding-left: 4.75rem!important;
+}
+.level-4 {
+    padding-left: 6.75rem!important;
+}
+.level-5 {
+    padding-left: 8.75rem!important;
+}
+.level-6 {
+    padding-left: 10.75rem!important;
+}
+.level-7 {
+    padding-left: 12.75rem!important;
+}
+.level-8 {
+    padding-left: 14.75rem!important;
+}
+.level-9 {
+    padding-left: 16.75rem!important;
+}
+.level-10 {
+    padding-left: 18.75rem!important;
+}
+.select2-selection {
+    border-radius: 2px!important;
+    height: 39px!important;
+}
+.toggle-button {
+    opacity: .7;
+    cursor: pointer;
+}
+.toggle-button:hover {
+    opacity: 1;
+}
+
+.toggle-button:before {
+    display: inline-block;
+    width: 22px;
+    height: 14px;
+    content: '';
+}
+.plus-button:before {
+    background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%0A%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%226.5%22%20stroke%3D%22%23525C69%22%20opacity%3D%22.234%22/%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%2380868E%22%20d%3D%22M8%2C6%20L8%2C4%20L6%2C4%20L6%2C6%20L4%2C6%20L4%2C8.01443104%20L6%2C8.01443104%20L6%2C10%20L8%2C10%20L8%2C8.01443104%20L10%2C8.01443104%20L10%2C6%20L8%2C6%20Z%22%20opacity%3D%22.7%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E%0A') center center no-repeat;
+}
+
+.minus-button:before {
+    background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%0A%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%226.5%22%20stroke%3D%22%23525C69%22%20opacity%3D%22.234%22/%3E%0A%20%20%20%20%3Crect%20width%3D%226%22%20height%3D%222%22%20x%3D%224%22%20y%3D%226%22%20fill%3D%22%23A6AAAF%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E%0A') center center no-repeat;
+}

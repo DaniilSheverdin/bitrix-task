@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+User-agent: *
+Disallow: /
+=======
+User-agent: *
+Disallow: /
+>>>>>>> e0a0eba79 (init)

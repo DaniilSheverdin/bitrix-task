@@ -1,0 +1,65 @@
+.ui-btn-icon-minus.ui-btn,
+.ui-btn-icon-minus.ui-btn-split,
+.ui-btn-icon-minus.ui-btn-double,
+.ui-btn-icon-minus.ui-btn-danger,
+.ui-btn-icon-minus.ui-btn-primary,
+.ui-btn-icon-minus.ui-btn-default,
+.ui-btn-icon-minus.ui-btn-danger-dark,
+.ui-btn-icon-minus.ui-btn-success-dark,
+.ui-btn-icon-minus.ui-btn-primary-dark,
+.bitrix24-light-theme .ui-btn-icon-minus.ui-btn-themes { --ui-btn-icon: url(/local/images/buttons/icons/ui-minus-white.svg?v=1.1); }
+
+.ui-btn-icon-minus.ui-btn-link,
+.ui-btn-icon-minus.ui-btn-light,
+.ui-btn-icon-minus.ui-btn-success,
+.ui-btn-icon-minus.ui-btn-secondary,
+.ui-btn-icon-minus.ui-btn-light-border,
+.bitrix24-dark-theme .ui-btn-icon-minus.ui-btn-themes { --ui-btn-icon: url(/local/images/buttons/icons/ui-minus-black.svg?v=1.1); }
+
+.ui-btn-icon-place.ui-btn,
+.ui-btn-icon-place.ui-btn-split,
+.ui-btn-icon-place.ui-btn-double,
+.ui-btn-icon-place.ui-btn-danger,
+.ui-btn-icon-place.ui-btn-primary,
+.ui-btn-icon-place.ui-btn-default,
+.ui-btn-icon-place.ui-btn-danger-dark,
+.ui-btn-icon-place.ui-btn-success-dark,
+.ui-btn-icon-place.ui-btn-primary-dark,
+.bitrix24-light-theme .ui-btn-icon-place.ui-btn-themes { --ui-btn-icon: url(/local/images/buttons/icons/ui-place-white.svg?v=1.1); }
+
+.ui-btn-icon-place.ui-btn-link,
+.ui-btn-icon-place.ui-btn-light,
+.ui-btn-icon-place.ui-btn-success,
+.ui-btn-icon-place.ui-btn-secondary,
+.ui-btn-icon-place.ui-btn-light-border,
+.bitrix24-dark-theme .ui-btn-icon-place.ui-btn-themes { --ui-btn-icon: url(/local/images/buttons/icons/ui-place-black.svg?v=1.1); }
+
+.ui-btn-icon-place.ui-btn::after {
+	background-size: 21px;
+}
+
+.bp-task-block .bizproc-item-buttons .bp-button.bp-button-transparent{display:none}
+.left-menu-ku{
+	padding: 5px 34px 0;
+	text-align: center;
+}
+.left-menu-ku a{
+	display: block;
+	transition-duration: .3s;
+}
+
+.left-menu-ku a:hover{
+	opacity: .8;;
+}
+.left-menu-ku img{
+	max-width:100%;
+}
+#left-menu-ku-message a,
+#left-menu-ku-message a:visited,
+#left-menu-ku-message a:link{
+	color:#fff;
+}
+
+.bootstrap-select > .dropdown-toggle {
+	border: 1px solid #ced4da;
+}

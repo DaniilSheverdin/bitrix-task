@@ -1,0 +1,126 @@
+<?
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/intranet/public/services/.left.menu.php");
+
+$aMenuLinks = Array(
+	Array(
+		GetMessage("SERVICES_MENU_MEETING_ROOM"),
+		"/citto/services/index.php",
+		Array("/citto/services/res_c.php"),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('MeetingRoomBookingSystem')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_IDEA"),
+		"/citto/services/idea/",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Idea')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_LISTS"),
+		"/citto/services/lists/",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Lists')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_REQUESTS"),
+		"/citto/services/requests/",
+		Array(),
+		Array(),
+		(!IsModuleInstalled("form"))?"false":"CBXFeatures::IsFeatureEnabled('Requests')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_LEARNING"),
+		"/citto/services/learning/",
+		Array("/services/course.php"),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Learning')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_WIKI"),
+		"/citto/services/wiki/",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Wiki')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_CONTACT_CENTER"),
+		"/citto/services/contact_center/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("SERVICES_MENU_FAQ"),
+		"/citto/services/faq/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		GetMessage("SERVICES_MENU_VOTE"),
+		"/citto/services/votes.php",
+		Array("/citto/services/vote_new.php", "/citto/services/vote_result.php"),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Vote')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_SUPPORT"),
+		"/citto/services/support.php?show_wizard=Y",
+		Array("/citto/services/support.php"),
+		Array(),
+		(!IsModuleInstalled("support"))?"false":"CBXFeatures::IsFeatureEnabled('Support')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_LINKS"),
+		"/citto/services/links.php",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('WebLink')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_SUBSCR"),
+		"/citto/services/subscr_edit.php",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Subscribe')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_EVENTLIST"),
+		"/citto/services/event_list.php",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('EventList')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_SALARY"),
+		"/citto/services/salary/",
+		Array(),
+		Array(),
+		"LANGUAGE_ID == 'ru' && CBXFeatures::IsFeatureEnabled('Salary')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_BOARD"),
+		"/citto/services/board/",
+		Array(),
+		Array(),
+		"CBXFeatures::IsFeatureEnabled('Board')"
+	),
+	Array(
+		GetMessage("SERVICES_MENU_TELEPHONY"),
+		"/citto/services/telephony/",
+		Array(),
+		Array(),
+		'CModule::IncludeModule("voximplant") && SITE_TEMPLATE_ID !== "bitrix24" && Bitrix\Voximplant\Security\Helper::isMainMenuEnabled()'
+	),
+	/*Array(
+		GetMessage("SERVICES_MENU_OPENLINES"),
+		"/citto/services/openlines/",
+		Array(),
+		Array(),
+		'CModule::IncludeModule("imopenlines") && SITE_TEMPLATE_ID !== "bitrix24" && Bitrix\ImOpenlines\Security\Helper::isMainMenuEnabled()'
+	),*/
+);
+?>

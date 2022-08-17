@@ -1,0 +1,33 @@
+.negative-indicators {
+  padding: 2rem 0 1.625rem;
+
+  background: $red-darken;
+
+  &__header {
+    @include h1;
+
+    margin-bottom: 1.375rem;
+
+    color: #fff;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-bottom: 1.125rem;
+
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

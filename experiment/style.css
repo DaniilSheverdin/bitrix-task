@@ -1,0 +1,24 @@
+.experiment {
+    overflow: hidden;
+}
+
+.js-show-users {
+    cursor: pointer;
+}
+
+.js-buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    margin: 0 -15px;
+    z-index: 333;
+    box-shadow: 0 -2px 6px -4px rgba(0, 0, 0, .4);
+}
+
+.user-selector-popup {
+    z-index: 333;
+    box-shadow: 0 7px 21px rgba(83, 92, 105, .12), 0 -1px 6px 0 rgba(83, 92, 105, .06);
+    width: 92%;
+}

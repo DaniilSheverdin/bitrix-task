@@ -1,0 +1,14 @@
+
+.alert{
+    padding: 5px 10px;
+    border: 1px solid #222;
+    margin: 10px 0 10px;
+}
+.alert-danger{
+    background-color: #f6989f;
+    border-color: #f6989f;
+    color: #222;
+}
+.bp-task-block .bizproc-item-buttons button[name="approve"]{
+    display: none;
+}

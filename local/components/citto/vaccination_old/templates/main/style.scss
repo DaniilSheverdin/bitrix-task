@@ -1,0 +1,70 @@
+.vaccination-wrapper {
+  padding-bottom: 3rem;
+  input[name=vac_date],
+  input[name=birthday_date],
+  input[name=passport_issued_date],
+  {
+    border: none;
+  }
+
+  h3 {
+    margin: 2rem 0 25px;
+    color: #333;
+    font: 24px/30px 'OpenSans-Light', "Helvetica Neue", Arial, Helvetica, sans-serif;
+  }
+
+  h4 {
+    margin: 1.6rem 0 1rem;
+    color: #333;
+    font: 18px/22px 'OpenSans-Light', "Helvetica Neue", Arial, Helvetica, sans-serif;
+    &.bold {
+      font-weight: 700;
+      margin-top: 3rem;
+    }
+  }
+
+
+
+  .input_group {
+    display: flex;
+    align-items: center;
+    margin-bottom: .6rem;
+    label {
+      color: #525c69;
+      font: 16px/22px 'OpenSans-Light', "Helvetica Neue", Arial, Helvetica, sans-serif;
+      flex-basis: 40%;
+    }
+    .ui-ctl {
+      flex-basis: 60%;
+    }
+    .ui-ctl-label-text {
+      &.error {
+        color: #ff5752;
+      }
+    }
+
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .required-change {
+    //padding-left: .7rem;
+  }
+
+
+}
+.bx-calendar-range .disabled{
+  pointer-events: none;
+}
+
+#vaccination_data_search_container {
+  border: 1px solid #3bc8f5;
+}
+
+.card-header {
+  background-color: transparent;
+}

@@ -1,0 +1,54 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/intranet/public/about/.left.menu.php");
+$aMenuLinks = Array(
+	Array(
+		GetMessage("ABOUT_MENU_OFFICIAL"),
+		"/edu/about/index.php", 
+		Array("/edu/about/official.php"), 
+		Array(), 
+		"" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_LIFE"),
+		"/edu/about/life.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_ABOUT"),
+		"/edu/about/company/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_PHOTO"),
+		"/edu/about/gallery/", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('CompanyPhoto')" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_VIDEO"),
+		"/edu/about/media.php", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('CompanyVideo')" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_CAREER"),
+		"/edu/about/career.php", 
+		Array("/edu/about/resume.php"), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('CompanyCareer')" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_NEWS"),
+		"/edu/about/business_news.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+);
+?>

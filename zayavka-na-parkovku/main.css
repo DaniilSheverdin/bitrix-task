@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+body{
+    counter-reset: propusk_avto;
+}
+.zayavka-na-parkovku__avto__indx:after {
+    counter-increment: propusk_avto;
+    content: counter(propusk_avto);
+}
+.zayavka-na-parkovku__zdanie{
+    display:none;
+}
+.zayavka-na-parkovku__avto__item:first-child .zayavka-na-parkovku__avto__indx button{
+    display: none;
+=======
+body{
+    counter-reset: propusk_avto;
+}
+.zayavka-na-parkovku__avto__indx:after {
+    counter-increment: propusk_avto;
+    content: counter(propusk_avto);
+}
+.zayavka-na-parkovku__zdanie{
+    display:none;
+}
+.zayavka-na-parkovku__avto__item:first-child .zayavka-na-parkovku__avto__indx button{
+    display: none;
+>>>>>>> e0a0eba79 (init)
+}

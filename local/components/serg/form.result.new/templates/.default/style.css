@@ -1,0 +1,250 @@
+.bi_table {
+  width: 2320px;
+  height: 500px;
+  overflow-y: scroll;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_header {
+  display: flex;
+  background-color: #36b5df;
+  color: white;
+  position: sticky;
+  top: 0;
+  font-size: 16px;
+  border-bottom: 1px solid #bebebe;
+}
+.bi_table_header .full-name {
+  width: 320px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .short-name {
+  width: 320px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .base-set {
+  width: 400px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .target-value {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .state-value {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .percent_exec {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .last-value {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .last-value > span {
+  display: block;
+  padding: 7px 0;
+}
+.bi_table_header .comment {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .date {
+  width: 120px;
+  padding: 10px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+.bi_table_header .date-last-change {
+  width: 100px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+  text-align: center;
+}
+.bi_table_header .date-last-change > span {
+  display: block;
+  padding: 7px 0;
+}
+.bi_table_body input {
+  width: calc(100% - 26px);
+  height: 30px;
+  font-size: 14px;
+  padding: 0 10px;
+  border: 1px solid #d8d8d8;
+}
+.bi_table_body textarea {
+  width: calc(100% - 26px);
+  height: 60px;
+  font-size: 14px;
+  padding: 0 10px;
+  border: 1px solid #d8d8d8;
+}
+.bi_table_body .string {
+  display: flex;
+  border-bottom: 1px solid #bebebe;
+  border-left: 1px solid #bebebe;
+}
+.bi_table_body .string:nth-child(2n) {
+  background-color: #eef2f4;
+}
+.bi_table_body .string .full-name {
+  width: 320px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .short-name {
+  width: 320px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .base-set {
+  width: 400px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .target-value {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .state-value {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .percent_exec {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .comment {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .last-value {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+  text-align: center;
+}
+.bi_table_body .string .last-value > span {
+  display: block;
+  padding: 7px 0;
+}
+.bi_table_body .string .date {
+  width: 120px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .date-last-change {
+  width: 100px;
+  padding: 10px;
+  border-right: 1px solid #bebebe;
+}
+.bi_table_body .string .date-last-change > span {
+  display: block;
+  padding: 7px 0;
+}
+
+.divider {
+  width: 100%;
+  height: 35px;
+  background-color: #ebebeb;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.form-bi {
+  margin-top: 10px;
+}
+.form-bi .control-input {
+  padding: 30px 0;
+  display: flex;
+}
+.form-bi .control-input .input-group-label {
+  padding-right: 20px;
+  line-height: 2em;
+  min-width: 180px;
+}
+.form-bi .action-list-buttons {
+  padding: 20px 5px;
+}
+.form-bi select[name=control] {
+  width: 280px;
+  height: 30px;
+  border: 1px solid #999;
+}
+.form-bi select[name=otdel] {
+  width: 280px;
+  height: 30px;
+  border: 1px solid #999;
+}
+
+.bi-table-error {
+  padding: 30px 0;
+  color: #e40200;
+}
+
+#send-form-bi {
+  margin-left: 20px;
+}
+
+.bi-position-relative {
+  position: relative;
+}
+
+.loader-ajax {
+  border: 8px solid rgba(54, 181, 223, 0.2);
+  border-top: 8px solid #36b5df;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s ease-in infinite;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  z-index: 10;
+}
+
+.loader-background {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+.loader-background .loader-ajax {
+  z-index: 1001;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

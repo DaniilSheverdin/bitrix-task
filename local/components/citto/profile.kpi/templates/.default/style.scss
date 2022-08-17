@@ -1,0 +1,118 @@
+.select-department {
+  flex-basis: 30%;
+}
+
+.kpi-user-wrapper {
+  font: 14px/16px 'OpenSans-Light', "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.bg-white {
+  padding: 1rem;
+  background-color: #fff;
+  margin-top: 1rem;
+  &.indicators {
+    flex-basis: calc(70% - 1rem);
+    margin-right: 1rem;
+  }
+  &.final {
+    flex-basis: 30%;
+  }
+}
+.fio {
+  font-size: 20px;
+}
+.department {
+  margin-left: auto;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.d-kpi {
+  display: flex;
+  margin-top: 1.5rem;
+  .subtitle {
+    flex-basis: 25%;
+  }
+  .subtitle-sum {
+    flex-basis: 60%;
+  }
+  span {
+    &.red {
+      color: darkred;
+    }
+    &.green {
+      color: forestgreen;
+    }
+  }
+}
+
+.user {
+  font-size: 18px;
+  display: flex;
+  div {
+    padding-right: 1rem;
+  }
+}
+.select-container {
+  display: flex;
+  align-items: center;
+}
+
+.empty-select {
+  padding-right: 2rem;
+}
+
+.kpi-row {
+  display: flex;
+  padding: .6rem 0;
+}
+
+.table-head {
+  margin-top: 2rem;
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 2rem;
+
+}
+.table-body {
+  font-size: 14px;
+}
+
+.name {
+  flex-basis: 35%;
+}
+.weight {
+  flex-basis: 15%;
+
+}
+.target {
+  flex-basis: 25%;
+
+}
+.value {
+  flex-basis: 25%;
+
+}
+
+.bg-white-container {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

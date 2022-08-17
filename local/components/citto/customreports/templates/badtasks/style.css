@@ -1,0 +1,10 @@
+.user-selector-popup {
+    background: #fff;
+    z-index: 333;
+    box-shadow: 0 7px 21px rgba(83, 92, 105, .12), 0 -1px 6px 0 rgba(83, 92, 105, .06);
+    padding: 15px 10px;
+}
+.user-selector-popup .close {
+    margin-top: -5px;
+    outline: none;
+}

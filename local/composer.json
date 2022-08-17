@@ -1,0 +1,9 @@
+{
+  "require": {
+    "php": "^7.1",
+    "symfony/var-dumper": "v4.*",
+    "monolog/monolog": "v1.25.*",
+    "phpoffice/phpword": "v0.18.*",
+    "dompdf/dompdf": "^1.0"
+  }
+}

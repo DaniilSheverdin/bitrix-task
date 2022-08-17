@@ -1,0 +1,75 @@
+
+header {
+    height: 60px;
+    z-index: 2;
+    top: 0;
+}
+
+header + .container {
+    padding-top: 60px;
+    min-height: 80vh;
+}
+
+header a, header a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+._phone {
+    font-size: 22px;
+}
+
+._phone > span > span {
+    font-weight: bold;
+}
+
+footer {
+    height: 20vh;
+    min-height: 150px;
+    padding: 30px 0;
+    background-color: #f5f5f5;
+}
+
+footer a, footer a:hover {
+    color: #ff8562;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social_links_item {
+    margin: 0 5px;
+    padding: 15px 0;
+}
+
+.social_links_item .helpline-poper {
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all  0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    transform: translateY(-200%);
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px #999999;
+    min-width: 280px;
+    padding: 10px;
+    min-height: 50px;
+    top: 55px;
+    right: 0;
+    background-color: #FFFFFF;
+    z-index: 1001;
+    opacity: 0;
+}
+
+.social_links_item:hover .helpline-poper {
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all  0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.picker__select--month, .picker__select--year {
+    padding: 0.2rem 0.5rem !important;
+}

@@ -1,0 +1,60 @@
+.docsign-form ul{
+    margin-bottom: 25px;
+    background: #fff;
+    box-shadow: inset 1px 1px 2px -1px #000;
+    padding: 20px 30px 40px;
+}
+.docsign-form .text-muted{
+    color:#6c757d;
+} 
+.docsign-form .text-success{
+    color:#28a745;
+}
+.docsign-form .text-danger{
+    color:#dc3545;
+}
+.docsign-form button{
+    border:0;
+}
+.docsign-form button:disabled{
+    border:0;
+	opacity: .4;
+    cursor: not-allowed;
+}
+button[name="docsign-submit"]{
+    display: none;
+}
+.docsign-form .docsign-cryptoplugin{
+	
+}
+.docsign-cryptoplugin__certs select{
+	width:100%;
+	max-width: 100%;
+}
+.docsign-actions{
+	display:none;
+}
+.docsign-actions label{
+	display: block;
+    padding: 10px 0;
+}
+.docsign-files input+a{
+    padding:0 40px 0 0;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: 30px 30px;
+}
+.docsign-files input.signing+a{
+    background-image:url('../img/preloader.gif'); 
+    background-color: #f6989f;
+    color: #fff;
+}
+.docsign-files input.signed+a{
+    background-color: #98f699;
+    color: #000;
+}
+.docsign-form{
+    padding: 20px;
+    background: #fff;
+}

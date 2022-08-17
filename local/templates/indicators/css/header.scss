@@ -1,0 +1,113 @@
+.header {
+  background: $blue;
+
+  &__navbar {
+    .navbar__list {
+      display: flex;
+      flex-direction: row;
+
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar__item {
+      &:first-child {
+        .navbar__link {
+          border-left: 1px solid #484E72;
+        }
+      }
+    }
+
+    .navbar__link {
+      display: block;
+      padding: 1.75rem 2.25rem;
+
+      color: #fff;
+
+      border-right: 1px solid #484E72;
+    }
+  }
+
+  &__menu-button {
+    padding: 1.125rem 0 1.1875rem;
+
+    border: none;
+    background: none;
+  }
+
+  &__search-form {
+    width: 100%;
+
+    .search-form__input {
+      padding-left: 1.5rem;
+      height: 2.75rem;
+
+      color: #fff;
+
+      background: rgba(255, 255, 255, 0.4);
+      border: none;
+      border-radius: 5rem;
+
+      &::placeholder {
+        color: #fff;
+      }
+
+      & + .input-group-append {
+        margin-left: 0;
+
+        background: rgba(255, 255, 255, 0.4);
+        border-bottom-right-radius: 5rem;
+        border-top-right-radius: 5rem;
+      }
+    }
+
+    .search-form__button {
+      padding-right: 1.5rem;
+
+      border-bottom-right-radius: 5rem;
+      border-top-right-radius: 5rem;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__login-button {
+    width: 100%;
+    max-width: 9.6875rem;
+    height: 2.75rem;
+
+    color: $blue-lighten;
+
+    border: none;
+    border-radius: 5rem;
+
+    transition: all .3s;
+
+    &:hover {
+      background: darken(#e5e5e5, 20%);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    &__search-form {
+      padding-bottom: 1.125rem;
+    }
+
+    &__login-button {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header {
+    &__navbar {
+      display: none;
+    }
+  }
+}

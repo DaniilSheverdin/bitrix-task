@@ -1,0 +1,10 @@
+<?
+require($_SERVER['DOCUMENT_ROOT']."/bitrix/header.php");
+?><?$APPLICATION->IncludeComponent(
+    "citto:vaccination_covid19",
+    "",
+    Array(
+    )
+);?><?
+require($_SERVER['DOCUMENT_ROOT']."/bitrix/footer.php");
+?>

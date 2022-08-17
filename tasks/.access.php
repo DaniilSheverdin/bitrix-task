@@ -1,0 +1,17 @@
+<?
+$PERM["test.php"]["2"]="X";
+$PERM["test.php"]["3"]="X";
+$PERM["test.php"]["12"]="X";
+$PERM["test.php"]["4"]="X";
+$PERM["test.php"]["9"]="X";
+$PERM["test.php"]["10"]="X";
+$PERM["test.php"]["13"]="X";
+$PERM["test.php"]["6"]="X";
+$PERM["test.php"]["8"]="X";
+$PERM["test.php"]["11"]="X";
+$PERM["test.php"]["7"]="X";
+$PERM["test.php"]["15"]="X";
+$PERM["test.php"]["14"]="X";
+$PERM["test.php"]["5"]="X";
+$PERM["test.php"]["*"]="X";
+?>

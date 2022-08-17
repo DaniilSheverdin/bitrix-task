@@ -1,0 +1,58 @@
+.required {
+  color:  red;
+  margin-right:  5px;
+}
+
+.results {
+  border-collapse: separate;
+  border-spacing: 0 23px;
+  &__row {
+    padding-bottom: 20px;
+    td {
+      padding: 15px;
+      &.colored {
+        border-radius: 4px;
+        &.red {
+          background-color: #f1361a;
+          color: white;
+        }
+        &.grey {
+          background-color: #868d95;
+          color: white;
+        }
+        &.green {
+          background-color: #bbed21;
+          color: #535c69
+        }
+      }
+    }
+  }
+  &__checkbox {
+    width: 30px;
+  }
+}
+
+.box {
+  &-title {
+    span {
+      margin-left: 141px;
+    }
+  }
+}
+
+.grid_filter {
+  margin: 20px;
+  .main-ui-filter-search {
+    border: 1px solid #ccc;
+    margin-top: 0;
+  }
+}
+h4  {
+  font-weight: 400;
+  height: 100%;
+  text-align: center;
+}
+.role {
+  margin: 20px;
+  font-size: 18px;
+}

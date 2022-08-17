@@ -1,0 +1,75 @@
+.departments-block {
+  padding: 3rem 0 3.25rem;
+
+  &__header {
+    @include h1;
+
+    margin-bottom: 1.875rem;
+  }
+
+  &__search-form {
+    margin-bottom: 2.125rem;
+
+    .search-form__input {
+      @include search-input;
+
+      border-right: none;
+    }
+
+    .search-form__button {
+      @include search-button
+    }
+  }
+
+  &__accordions {
+    padding: 0.5rem 1.625rem 1.125rem 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.25);
+
+    .card {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #999EBD;
+
+      &:last-child {
+        border-bottom: none;
+
+        .card-body {
+          border-bottom: 1px solid #999EBD;
+        }
+      }
+    }
+
+    .card-header {
+      padding: 1.25rem 0;
+
+      border: none;
+      background: none;
+
+      .btn {
+        padding: 0 1rem 0 0;
+
+        @include accordion-label;
+
+        &:after {
+          content: url("../images/arrow-down.svg");
+          position: absolute;
+          top: 1.3125rem;
+          right: 0;
+
+          transition: transform .3s;
+          transform: rotate(-30deg);
+        }
+
+        &.collapsed {
+          &:after {
+            transform: rotate(0deg);
+          }
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

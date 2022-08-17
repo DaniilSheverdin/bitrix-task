@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Просмотр заявки");
+?>
+<?$APPLICATION->IncludeComponent("bitrix:form.result.view", "intranet", array(
+	"RESULT_ID" => $_REQUEST["RESULT_ID"],
+	"SEF_MODE" => "N",
+	"SEF_FOLDER" => "/edu/services/requests/",
+	"SHOW_ADDITIONAL" => "Y",
+	"SHOW_ANSWER_VALUE" => "N",
+	"SHOW_STATUS" => "Y",
+	"EDIT_URL" => "form_edit.php",
+	"CHAIN_ITEM_TEXT" => "",
+	"CHAIN_ITEM_LINK" => ""
+	),
+	false
+);?>
+=======
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Просмотр заявки");
+?>
+<?$APPLICATION->IncludeComponent("bitrix:form.result.view", "intranet", array(
+	"RESULT_ID" => $_REQUEST["RESULT_ID"],
+	"SEF_MODE" => "N",
+	"SEF_FOLDER" => "/edu/services/requests/",
+	"SHOW_ADDITIONAL" => "Y",
+	"SHOW_ANSWER_VALUE" => "N",
+	"SHOW_STATUS" => "Y",
+	"EDIT_URL" => "form_edit.php",
+	"CHAIN_ITEM_TEXT" => "",
+	"CHAIN_ITEM_LINK" => ""
+	),
+	false
+);?>
+>>>>>>> e0a0eba79 (init)
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

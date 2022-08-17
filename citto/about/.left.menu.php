@@ -1,0 +1,54 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/intranet/public/about/.left.menu.php");
+$aMenuLinks = Array(
+	Array(
+		GetMessage("ABOUT_MENU_OFFICIAL"),
+		"/citto/about/index.php", 
+		Array("/citto/about/official.php"), 
+		Array(), 
+		"" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_LIFE"),
+		"/citto/about/life.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_ABOUT"),
+		"/citto/about/company/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_PHOTO"),
+		"/citto/about/gallery/", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('CompanyPhoto')" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_VIDEO"),
+		"/citto/about/media.php", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('CompanyVideo')" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_CAREER"),
+		"/citto/about/career.php", 
+		Array("/citto/about/resume.php"), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('CompanyCareer')" 
+	),
+	Array(
+		GetMessage("ABOUT_MENU_NEWS"),
+		"/citto/about/business_news.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+);
+?>

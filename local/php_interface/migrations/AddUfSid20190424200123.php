@@ -1,0 +1,70 @@
+<?php
+
+namespace Sprint\Migration;
+
+
+class AddUfSid20190424200123 extends Version
+{
+
+    protected $description = "";
+
+    public function up() {
+        $helper = new HelperManager();
+
+            $helper->UserTypeEntity()->saveUserTypeEntity(array (
+  'ENTITY_ID' => 'USER',
+  'FIELD_NAME' => 'UF_SID',
+  'USER_TYPE_ID' => 'string',
+  'XML_ID' => 'UF_SID',
+  'SORT' => '100',
+  'MULTIPLE' => 'N',
+  'MANDATORY' => 'N',
+  'SHOW_FILTER' => 'N',
+  'SHOW_IN_LIST' => 'Y',
+  'EDIT_IN_LIST' => 'Y',
+  'IS_SEARCHABLE' => 'N',
+  'SETTINGS' => 
+  array (
+    'SIZE' => 20,
+    'ROWS' => 1,
+    'REGEXP' => '',
+    'MIN_LENGTH' => 0,
+    'MAX_LENGTH' => 0,
+    'DEFAULT_VALUE' => '',
+  ),
+  'EDIT_FORM_LABEL' => 
+  array (
+    'en' => 'SID',
+    'ru' => 'Идентификатор из AD',
+  ),
+  'LIST_COLUMN_LABEL' => 
+  array (
+    'en' => 'SID',
+    'ru' => 'Идентификатор из AD',
+  ),
+  'LIST_FILTER_LABEL' => 
+  array (
+    'en' => 'SID',
+    'ru' => 'Идентификатор из AD',
+  ),
+  'ERROR_MESSAGE' => 
+  array (
+    'en' => 'SID',
+    'ru' => 'Идентификатор из AD',
+  ),
+  'HELP_MESSAGE' => 
+  array (
+    'en' => 'SID',
+    'ru' => 'Идентификатор из AD',
+  ),
+));
+        }
+
+    public function down() {
+        $helper = new HelperManager();
+
+        //your code ...
+
+    }
+
+}

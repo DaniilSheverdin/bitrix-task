@@ -1,0 +1,20 @@
+*, ::after, ::before {
+    box-sizing: revert;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.del {
+    margin-left: 5px;
+    color: red;
+}
+
+.input-add {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}

@@ -1,0 +1,141 @@
+.switch-button {
+	transition: 160ms;
+	background-color: #3bc8f5;
+	color: white;
+    display: inline-block;
+	padding: 0 20px;
+	margin-bottom: 20px!important;
+	border-radius: 2px;
+}
+.switch-button:hover {
+	transition: 160ms;
+	background-color: #4ecef5;
+}
+.switch-button a {
+	color: white;
+	font: var(--ui-btn-font-size)/calc(var(--ui-btn-height) - 2px) "OpenSans-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+.switch-button a:hover {
+	color: white;
+}
+
+.container-users {
+	display: flex;
+	flex-direction: row;
+	border: 2px solid #3bc8f5;
+
+}
+.container-users > .users__list {
+	border-right: 2px solid #3bc8f5;
+	min-width: 450px;
+}
+.users__list_title {
+	background-color: #ebf1f5;
+	margin-top: 20px;
+	padding: 0.5em 1em;
+}
+.projects__list_title {
+	border-top: 1px solid #dce2e6;
+
+	padding: 0.5em 2em;
+}
+.tasks__list_container {
+	border-top: 1px solid #dce2e6;
+}
+
+.tasks__list_title {
+
+	padding: 0.5em 3em;
+}
+.container-users > .users__graph {
+	display: flex;
+
+
+}
+
+.triangle_blue {
+	transition: transform 600ms;
+	margin-top: 6px;
+	margin-left: 10px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #bcedfc transparent transparent transparent;
+}
+
+.triangle_grey {
+    transition: transform 600ms;
+    margin-top: 6px;
+    margin-left: 10px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #4e5a68 transparent transparent transparent;
+}
+
+.name {
+	cursor: pointer;
+}
+.name:hover, .project_name_item:hover {
+    color: #3bc8f5!important;
+}
+
+.rotate90 {
+	transition: transform 600ms;
+	transform: rotate(90deg);
+}
+
+path.slice{
+	stroke-width:2px;
+}
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+svg text.percent{
+	fill:white;
+	text-anchor:middle;
+	font-size:12px;
+}
+
+.project_name {
+	display: contents;
+}
+
+.project_name_item {
+	padding-left: 14px;
+	cursor: pointer;
+    /*display: contents;*/
+    padding-bottom: 10px;
+}
+
+.task_item {
+	padding-left: 27px;
+	/*cursor: pointer;*/
+	display: contents;
+
+	padding-bottom: 10px;
+}
+.task_name_item {
+	padding-left: 27px;
+	margin-top: 0;
+}
+
+.dot_item {
+	height: 8px;
+	margin-right: 6px;
+	width: 8px;
+	border-radius: 50%;
+	display: inline-block;
+}
+#legend {
+	margin-top: 35px;
+	margin-left: 20px;
+}
