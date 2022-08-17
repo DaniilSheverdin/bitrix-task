@@ -84,9 +84,9 @@ function getProperties($iBlockID)
 
     $obEnums = CIBlockPropertyEnum::GetList(array("DEF" => "DESC", "SORT" => "ASC"), array("IBLOCK_ID" => $iBlockID));
     while ($arEnum = $obEnums->GetNext()) {
-        if ($arProperties[$arEnum['PROPERTY_ID']]) {
-            $arProperties[$arEnum['PROPERTY_ID']]['ENUMS'][$arEnum['ID']] = $arEnum;
-        }
+
+        $arProperties[$arEnum['PROPERTY_ID']]['ENUMS'][$arEnum['ID']] = $arEnum;
+        $arProperties[$arEnum['PROPERTY_CODE']][$arEnum['ID']]=$arEnum['VALUE'];
     }
 
     return $arProperties;
@@ -125,13 +125,11 @@ if ($arRequest['pto_new_worker'] && $arRequest['pto_new_worker'] == 'add') {
             }
         }
         //формирование служебной записки
-        $needZap = true;
-        if ($needZap) {
-            $objFile = new Bitrix\Main\IO\File(
-                $_SERVER["DOCUMENT_ROOT"] . '/local/templates_docx/shablon_zap.docx'
-            );
-            $objBody = new Bitrix\DocumentGenerator\Body\Docx($objFile->getContents());
-            $objBody->normalizeContent();
+            //$objFile = new Bitrix\Main\IO\File(
+//                $_SERVER["DOCUMENT_ROOT"] . '/local/templates_docx/shablon_zap.docx'
+//            );
+//            $objBody = new Bitrix\DocumentGenerator\Body\Docx($objFile->getContents());
+//            $objBody->normalizeContent();
 
             foreach ($arResult['OTDELLIST'] as $arOtdel)
             {
@@ -140,30 +138,52 @@ if ($arRequest['pto_new_worker'] && $arRequest['pto_new_worker'] == 'add') {
                     $arRequest['OIV'] = $arOtdel['NAME'];
                 }
             }
-            $arDocument = [
-                'NAIMENOVANIE_OIV' => $arRequest['OIV'],
-                'DOLZHNOST' => $arRequest['POSITION'],
-                'FIO' => $arRequest['FIO'],
-                'DATA_ROZHDENIA' => $arProps['BIRTHDAY'],
-                'TELEFON' => $arRequest['PHONE'],
-                'OKLAD' => $arRequest['SALARY'],
-                'NADBAVKA' => $arRequest['SURCHARGE'],
-                'POOSHRENIE' => $arRequest['PROMOTION']
-            ];
 
-            $objBody->setValues($arDocument);
-            $objBody->process();
-            $strContent = $objBody->getContent();
+            //родительные падежи
+            $sFIO_R=$morphFunct($arRequest['FIO'], 'Р');
+            $sOIV_R=$morphFunct($arRequest['OIV'], 'Р');
+            $sPositionR=mb_strtolower($morphFunct($arResult['FIELDS']['POSITION'][$arRequest['POSITION']], 'Р'));
 
-            $docPath = '/upload/bp/' . $intIBLOCK_ID . '/';
-            $strFileName = 'EP_shablon_zap_' . crc32(serialize(microtime())) . '.docx';
-            $strPathDoc = $_SERVER['DOCUMENT_ROOT'] . $docPath;
-            if (!mkdir($strPathDoc, 0775, true) && !is_dir($strPathDoc)) {
-                throw new RuntimeException('Directory "' . $strPathDoc . '" was not created');
-            }
-            $resCreate = file_put_contents($strPathDoc . $strFileName, $strContent);
-            $arProps['NOTE'] = \CFile::MakeFileArray($strPathDoc . $strFileName);
-        }
+            $arOIV=CUser::GetByID($arRequest['OIV_LEAD'])->Fetch();
+            $sOIV_FIO="{$arOIV['LAST_NAME']} {$arOIV['NAME']} {$arOIV['SECOND_NAME']}";
+
+
+            $sTemplate = file_get_contents( __DIR__.'/memo_template.html');;
+
+        $sContent = str_replace(
+                [
+                    '#OIV_ROD#',
+                    '#POSITION#',
+                    '#POSITION_ROD#',
+                    '#FIO_ROD#',
+                    '#FIO#',
+                    '#DATA_ROZHDENIA#',
+                    '#TELEFON#',
+                    '#OKLAD#',
+                    '#NADBAVKA#',
+                    '#POOSHRENIE#',
+                    '#OIV_FIO#',
+                    '#OIV_NAME#'
+                ],
+                [
+                    $sOIV_R,
+                    mb_strtolower($arResult['FIELDS']['POSITION'][$arRequest['POSITION']]),
+                    $sPositionR,
+                    $sFIO_R,
+                    $arRequest['FIO'],
+                    $arProps['BIRTHDAY'],
+                    $arRequest['PHONE'],
+                    $arRequest['SALARY'],
+                    $arRequest['SURCHARGE'],
+                    $arRequest['PROMOTION'],
+                    $sOIV_FIO,
+                    $arOIV['UF_WORK_POSITION']
+                ],
+                $sTemplate
+            );
+
+
+
 
         $arLoadProductArray = [
             'MODIFIED_BY' => $USER->GetId(),
@@ -180,6 +200,13 @@ if ($arRequest['pto_new_worker'] && $arRequest['pto_new_worker'] == 'add') {
         $obLogger->info('ADD', ['ID' => $boolDocumentid, 'DATA' => $arLoadProductArray]);
         if (!$boolDocumentid) {
             throw new Exception($objEl->LAST_ERROR);
+        }
+
+        $msg = '';
+        $docGenId = 0;
+        if (!$GLOBALS['setElementPDFValue']($boolDocumentid, 'NOTE', $sContent, "Служебная записка" . $USER->GetId(), $msg, $docGenId)) {
+            CIBlockElement::Delete($boolDocumentid);
+            throw new Exception("Не удалось создать файл");
         }
 
         $arErrorsTmp = [];
@@ -234,7 +261,7 @@ if ($arRequest['pto_new_worker'] && $arRequest['pto_new_worker'] == 'add') {
                 $sUserInfo = "$sUserInfo";
             }
             $arRuc['USER_INFO'] = $sUserInfo;
-            $arResult['USERS'][] = $arRuc;
+            $arResult['USERS'][$arRuc['ID']] = $arRuc;
         }
     }
 }

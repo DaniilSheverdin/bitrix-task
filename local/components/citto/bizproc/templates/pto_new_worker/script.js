@@ -1,4 +1,5 @@
 $(function () {
+	$('[data-toggle="tooltip"]').tooltip({placement: 'right'});
 	$('.js-pto_new_worker').on('submit', function (e) {
 		e.preventDefault();
 		e.stopPropagation();

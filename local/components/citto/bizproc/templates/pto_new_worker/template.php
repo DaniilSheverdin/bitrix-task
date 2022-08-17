@@ -85,12 +85,23 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
                             />
                         <? endif; ?>
                     <? elseif ($arField['TYPE'] == 'NUMBER'): ?>
-                        <input
-                            <? if ($arField['IS_REQUIRED'] == 'Y'): ?>
-                                required="required"
-                            <? endif; ?>
-                                class="form-control" type="number" name="<?= $arField['CODE'] ?>" id="bp_<?= $arField['CODE'] ?>"
-                        />
+                            <input id="test" data-toggle="tooltip" step="any"
+
+                                <?if ($arField['CODE'] == 'SALARY'): ?>
+                                    title="Оклад указывается в рублях"
+                                <? elseif ($arField['CODE'] == 'SURCHARGE'): ?>
+                                    title="Надбавка указывается в % от должностного оклада"
+                                <? elseif ($arField['CODE'] == 'PROMOTION'): ?>
+                                    title="Поощрение указывается как коэффициент от должностного оклада"
+                                <? endif; ?>
+
+                                <? if ($arField['IS_REQUIRED'] == 'Y'): ?>
+                                    required="required"
+                                <? endif; ?>
+                                    class="form-control" type="number" name="<?= $arField['CODE'] ?>" id="bp_<?= $arField['CODE'] ?>"
+                            />
+
+
                     <? elseif ($arField['TYPE'] == 'LIST'): ?>
                         <select class="selectpicker form-control"
                             <? if ($arField['IS_REQUIRED'] == 'Y'): ?>
